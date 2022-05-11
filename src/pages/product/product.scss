@@ -150,7 +150,7 @@
 
     .howTo{
         margin-top: 20px;
-        margin-left: 40px;
+        margin-left: 50px;
     }
     .useCon{
         padding-bottom: 20px;
@@ -166,8 +166,18 @@
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .productPage {
         height: 101.9vh;
+
+        .phead{
+            .title,.brName{
+                margin-left: 35px;
+            }
+        }
+
+        .content{
+            margin-left: 35px;
+        }
     }
 }
