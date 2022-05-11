@@ -31,7 +31,7 @@
         font-size: 25px;
         font-weight: bold;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     hr{
         width: 240px;
@@ -55,6 +55,23 @@
 @media (max-width:1000px) {
     .navCon {
         height: 800px;
+    }
+}
+
+@media (max-width:720px) {
+    .sidebar{
+        width: 300px;
+
+        img{
+            width: 80px;
+            height: 80px;
+            margin-left: 115px;
+        }
+
+        div{
+            font-size: 16px;
+            margin-top: 15px;
+        }
     }
 }
 

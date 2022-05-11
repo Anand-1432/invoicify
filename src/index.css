@@ -14,3 +14,9 @@ body::-webkit-scrollbar {
   display: grid;
   place-content: center;
 }
+
+@media (max-width:420px) {
+  .main{
+    background-color: rgb(245, 248, 252);
+  }
+}
