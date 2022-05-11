@@ -36,7 +36,7 @@ const Login = () => {
         <div className='main'>
         <div className='loginContainer'>
             <div className='heading'>Invoicify</div>
-            <form className="m-auto">
+            <form>
                 <p>Number</p>
                 <span className='icon'><CallIcon htmlColor='gray'/></span>
                 <input className="form-control" type="text" placeholder="Enter Your Number" />
