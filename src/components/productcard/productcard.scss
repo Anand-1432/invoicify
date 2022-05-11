@@ -1,0 +1,38 @@
+.productCard {
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 1px 1px 10px rgb(225, 230, 241);
+    padding: 15px;
+    padding-bottom: 25px;
+    position: relative;
+
+    img{
+        width: 170px;
+        border-radius: 20px;
+    }
+    section{
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    span{
+        margin-top: 10px;
+        color: gray;
+    }
+    .call{
+        position: absolute;
+        right:15px;
+        bottom: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 1px 1px 10px rgb(223, 229, 234);
+        text-align: center;
+        color: #0F55A7;
+    }
+}

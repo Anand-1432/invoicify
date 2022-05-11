@@ -1,0 +1,118 @@
+.service {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+
+
+    .header {
+        width: 100%;
+        padding-top: 45px;
+        background-color: #0F55A7;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        .back {
+            color: white;
+            margin-top: -7px;
+        }
+    }
+
+    #h1{
+        text-align: center;
+        font-size: 25px;
+        padding-top: 80px;
+        font-family: 'Rationale';
+        margin-bottom: 70px;
+    }
+
+    input {
+        width: 320px;
+        padding: 10px;
+        margin-left: 44px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: rgb(245, 248, 252);
+        border: 1px solid gray;
+    }
+    .down{
+        position: relative;
+        left: -30px;
+        color: #797979;
+    }
+
+    #data {
+        width: 320px;
+        height: 150px;
+        margin-left: 46px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        overflow-y: scroll;
+
+        p {
+            padding: 8px;
+            margin-bottom: 0px;
+            border-bottom: 1px solid rgb(170, 168, 168);
+            color: #797979;
+        }
+    }
+
+    #btn1{
+        width: 320px;
+        padding: 10px;
+        margin-left: 44px;
+        background-color: #0F55A7;
+        color: white;
+        margin-top: 30px;
+    }
+
+    #result{
+        margin-top: 30px;
+        padding-left: 35px;
+        padding-right: 20px;
+        position: relative;
+        color: #797979;
+        display: none;
+        .name{
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+        section{
+            width: 65%;
+            height: auto;
+            margin-top: -10px;
+            font-size: 12px;
+        }
+        span{
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+        }
+        .phone{
+            color: blue;
+        }
+        .arrow{
+            position: absolute;
+            right: 30px;
+            top: 15px;
+        }
+    }
+
+}
+
+@media (max-width:1000px) {
+    .service {
+        height: 800px;
+    }
+}
+
+@media (max-width:400px) {
+    .service {
+        height: 101.9vh;
+    }
+}

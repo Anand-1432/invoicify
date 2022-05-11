@@ -1,0 +1,173 @@
+.productPage{
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+    position: relative;
+
+    .goback{
+        position: absolute;
+        top:30px;
+        left: 20px;
+        color: white;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .image{
+        width: 100%;
+        height: 50vh;
+        border-radius: 0px 0px 40px 40px;
+        box-shadow: 1px 1px 10px rgb(218, 216, 216);
+    }
+    
+    .phead{
+        width: 85%;
+        margin: auto;
+        position: relative;
+
+        .help{
+           position: absolute;
+           top:-40px;
+           right: -30px;
+           width: 130px;
+           overflow: hidden;
+           div{
+               width: 40px;
+               padding: 8px;
+               background-color: white;
+               box-shadow: 1px 1px 10px rgb(168, 175, 180);
+               border-radius: 50%;
+               display: grid;
+               place-content: center;
+               color: #0F55A7;
+               margin-left: 60px;
+               cursor: pointer;
+           }  
+           p{
+               font-size: 12px;
+               font-weight: 500;
+               color: #b9b8b8;
+               margin-top: 3px;
+               margin-left: 56px;
+           }
+           section{
+               width: 80px;
+               height: 40px;
+               position: absolute;
+               top:0px;
+               right: -90px;
+               background-color: white;
+               box-shadow: 1px 1px 10px rgb(168, 175, 180);
+               border-radius: 5px;
+               transition: .3s;
+               z-index: 3;
+
+               #sp1{
+                   color:#0F55A7;
+                   top:5px;
+                   left: 9px;
+                   position: absolute;
+               }
+               #sp2{
+                   color: #0F55A7;
+                   top:5px;
+                   right: 9px;
+                   position: absolute;
+               }
+            }
+        }
+        .title{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .brName{
+            margin-top: -15px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #797979;
+        }
+    }
+
+    .content{
+        width: 85%;
+        margin: auto;
+
+        .data{
+            margin-left: -12px;
+            p{
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 17px;
+                color: #797979;
+            }
+            section{
+                margin-top: -12px;
+                font-size: 14px;
+                color: #b8b8b8;
+            }
+            #bn{
+                color: #b8b8b9;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+            .btn{
+                font-size: 14px;
+                margin-top: 20px;
+                background-color: #0F55A7;
+                padding: 7px 20px 7px 20px;
+                width: 160px;
+                box-shadow: 1px 1px 20px rgb(166, 166, 255);
+            }
+        }
+
+        .data2{
+            text-align: end;
+            p{
+                margin-right: -23px;
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 17px;
+                color: #797979;
+            }
+            section{
+                margin-top: -12px;
+                margin-right: -23px;
+                font-size: 14px;
+                color: #b8b8b8;
+            }
+            .btn{
+                font-size: 14px;
+                margin-right: -23px;
+                color: white;
+                margin-top: 55px;
+                background-color: #0F55A7;
+                padding: 7px 20px 7px 20px;
+                width: 160px;
+                box-shadow: 1px 1px 20px rgb(166, 166, 255);
+            }
+        }
+    }
+
+    .howTo{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .useCon{
+        padding-bottom: 20px;
+        width: 100%;
+        height: auto;
+        background-color:  rgb(245, 248, 252);
+    }
+}
+
+@media (max-width:1000px) {
+    .productPage {
+        height: 800px;
+    }
+}
+
+@media (max-width:400px) {
+    .productPage {
+        height: 101.9vh;
+    }
+}
