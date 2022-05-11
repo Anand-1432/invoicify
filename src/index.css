@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width:420px) {
-  .main{
+  body{
     background-color: rgb(245, 248, 252);
   }
 }
