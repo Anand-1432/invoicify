@@ -11,7 +11,7 @@
 }
 .sidebar {
     width: 330px;
-    height: 104vh;
+    height: 102vh;
     background-color: white;
     position: absolute;
     top: 0px;
@@ -77,10 +77,11 @@
 
 @media (max-width:420px) {
     .navCon {
-        height: 104vh;
+        height: 110vh;
         position: fixed;
     }
     .sidebar{
+        height: 110vh;
         position: fixed;
     }
 }
