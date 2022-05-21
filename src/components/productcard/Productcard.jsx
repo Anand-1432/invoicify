@@ -10,9 +10,8 @@ const Productcard = (props) => {
   const navigate = useNavigate();
 
   const sendData = (data) =>{
-    console.log(data);
     
-    navigate('/product',{state:{
+    navigate(`/product/${data.id}`,{state:{
       id:data.id, 
       title:data.title, 
       brand:data.brand, 

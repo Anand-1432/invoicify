@@ -15,6 +15,17 @@ body::-webkit-scrollbar {
   place-content: center;
 }
 
+/* @media (max-width:1050px) {
+  .main{
+    padding-left: 280px;
+  }
+}
+@media (max-width:500px) {
+  .main{
+    padding-left: 0px;
+  }
+} */
+
 @media (max-width:420px) {
   body{
     background-color: rgb(245, 248, 252);

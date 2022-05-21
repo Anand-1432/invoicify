@@ -123,9 +123,23 @@
     }
 }
 
+/////////////////////////////////
+@media (max-width:1050px) {
+    .home {
+        margin-left: 280px;
+    }
+}
+@media (max-width:500px) {
+    .home {
+        margin-left:0px;
+    }
+}
+//////////////////////////////////////
+
 @media (max-width:420px) {
     .home {
         height: 101.9vh;
+        margin-left: 0px;
 
         .productContainer{
             width: 95%;
