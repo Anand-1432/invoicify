@@ -113,15 +113,8 @@
     .home {
         height: 800px;
     }
-
-    #btnOn {
-        display: inline-block;
-    }
-
-    #btnOff {
-        display: none;
-    }
 }
+
 
 /////////////////////////////////
 @media (max-width:1050px) {
@@ -135,6 +128,17 @@
     }
 }
 //////////////////////////////////////
+
+@media (max-width:500px) {
+    
+    #btnOn {
+        display: inline-block;
+    }
+    
+    #btnOff {
+        display: none;
+    }
+}
 
 @media (max-width:420px) {
     .home {
