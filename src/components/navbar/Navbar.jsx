@@ -24,8 +24,6 @@ const Navbar = () => {
                 <hr />
                 <div>My Products</div>
                 <hr />
-                <div>Marketplace</div>
-                <hr />
                 <div>Best Offer</div>
                 <hr />
                 <div><Link to='/add_invoice' id='link'>Add Invoice</Link></div>
@@ -33,6 +31,8 @@ const Navbar = () => {
                 <div><Link to='/service_center' id='link'>Service Center</Link></div>
                 <hr />
                 <div>Switch To Seller</div>
+                <hr />
+                <div><Link to='/scan' id='link'>Scan</Link></div>
                 <hr />
                 <div><Link to='/login' id='link'>Logout</Link></div>
             </div>
