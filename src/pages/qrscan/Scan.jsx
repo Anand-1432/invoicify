@@ -3,16 +3,16 @@ import './scan.scss'
 import { Link } from 'react-router-dom'
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { QrReader } from 'react-qr-reader';
-import img from "../../assets/scanner2.png"
+// import img from "../../assets/scanner2.png"
 
 const Scan = () => {
 
     const [data, setData] = useState("");
 
     const videoStyle = {
-        width: '450px',
+        width: '350px',
         borderRadius: '10px',
-        marginLeft: "-100px"
+        marginLeft: "27px"
     }
 
     const handleError = (err) => {
@@ -53,7 +53,7 @@ const Scan = () => {
                             onResult={handleScan}
                             videoContainerStyle={videoStyle}
                         />
-                        <img className='scanImg' src={img} alt="" />
+                        {/* <img className='scanImg' src={img} alt="" /> */}
                     </div>
                     <p className='instruction'>Align QR inside square</p>
                     <p className='result'>{data}</p>
