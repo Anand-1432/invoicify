@@ -12,7 +12,12 @@ const Scan = () => {
     const videoStyle = {
         width: '350px',
         borderRadius: '10px',
-        marginLeft: "-47px"
+        marginLeft: "27px"
+    }
+    const style = {
+        width:"250px",
+        backgroundColor:"red",
+        borderRadius:"20px"
     }
 
     const handleError = (err) => {
@@ -52,6 +57,7 @@ const Scan = () => {
                             onError={handleError}
                             onResult={handleScan}
                             videoContainerStyle={videoStyle}
+                            containerStyle={style}
                         />
                         {/* <img className='scanImg' src={img} alt="" /> */}
                     </div>
