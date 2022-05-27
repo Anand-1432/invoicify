@@ -10,7 +10,7 @@ const Scan = () => {
     const [data, setData] = useState("");
 
     const videoStyle = {
-        heigth: '350px',
+        width: '550px',
         borderRadius: '10px',
         marginLeft: "27px"
     }
