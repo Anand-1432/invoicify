@@ -12,7 +12,7 @@ const Scan = () => {
     const videoStyle = {
         width: '550px',
         borderRadius: '10px',
-        marginLeft: "-200px"
+        marginLeft: "-150px"
     }
 
     const handleError = (err) => {
