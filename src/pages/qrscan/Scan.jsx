@@ -47,6 +47,8 @@ const Scan = () => {
 
                     <div className='qrBox'>
                         <QrReader
+                            key="environment"
+                            constraints={{ facingMode: 'environment' }}
                             onError={handleError}
                             onResult={handleScan}
                             videoContainerStyle={videoStyle}
