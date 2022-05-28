@@ -1,0 +1,53 @@
+.footer {
+    
+    margin-top: auto;
+
+    .inner {
+        position: relative;
+
+        .conimg {
+            width: 100%;
+            height: auto;
+        }
+
+        .addIcon {
+            position: absolute;
+            top: 34px;
+            left: 168px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #0F55A7;
+            color: white;
+        }
+
+        .homy {
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            width: 35px;
+            height: 35px;
+            padding-left: 6px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+
+        }
+
+        .money {
+            position: absolute;
+            top: 70px;
+            right: 70px;
+            width: 35px;
+            height: 35px;
+            padding-left: 6px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}

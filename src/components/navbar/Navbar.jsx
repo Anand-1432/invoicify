@@ -30,7 +30,7 @@ const Navbar = () => {
                 <hr />
                 <div><Link to='/service_center' id='link'>Service Center</Link></div>
                 <hr />
-                <div>Switch To Seller</div>
+                <div><Link to='/dashBoard' id='link'>Switch To Seller</Link></div>
                 <hr />
                 <div><Link to='/scan' id='link'>Scan</Link></div>
                 <hr />

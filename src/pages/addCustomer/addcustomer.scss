@@ -1,0 +1,102 @@
+.addCustomer {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+
+
+    .header {
+        width: 100%;
+        padding-top: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        padding-left: 20px;
+
+        .back {
+            color: #797979;
+            margin-top: -7px;
+        }
+    }
+
+    .heading {
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 90px;
+        text-align: center;
+        font-family: 'Redressed';
+        margin-bottom: 40px;
+    }
+
+    form {
+        width: 320px;
+        margin-left: 50px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-top: 30px;
+        font-weight: 500;
+        margin-bottom: -5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .icon {
+        position: relative;
+        top: 38px;
+        left: 10px;
+    }
+
+    input {
+        line-height: 35px;
+        padding-left: 50px;
+    }
+
+    #resend {
+        display: none;
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: #797979;
+        }
+
+        div {
+            width: 100%;
+            display: grid;
+            place-content: center;
+
+            button {
+                color: blue;
+                border: none;
+                background-color: white;
+                margin-top: 10px;
+                margin-bottom: -20px;
+                z-index: 10;
+            }
+        }
+    }
+
+    .btn2 {
+        width: 100%;
+        line-height: 35px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+@media (max-width:1000px) {
+    .addCustomer {
+        height: 800px;
+    }
+}
+
+@media (max-width:400px) {
+    .addCustomer {
+        height: 101.9vh;
+    }
+}
