@@ -1,0 +1,48 @@
+.userType{
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+
+    .header {
+        width: 100%;
+        height: 60px;
+        background-color: #0F55A7;
+    }
+
+    #smart{
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+    
+    .btnCon{
+        width: 100%;
+        margin-top: -50px;
+        display: grid;
+        place-content: center;
+        background-color:rgb(245, 248, 252);
+
+        .btn{
+            width: 300px;
+            background-color: #0F55A7;
+            color: white;
+        }
+    }
+
+    #owner{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:1000px) {
+    .userType {
+        height: 800px;
+    }
+}
+
+@media (max-width:400px) {
+    .userType {
+        height: 101.9vh;
+    }
+}

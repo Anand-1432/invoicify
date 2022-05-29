@@ -12,7 +12,7 @@ import Navbar from '../../components/navbar/Navbar';
 const Home = () => {
 
   const Product = [
-    { id: 1, title: "Microwave", brand: "Phillips", img: owen, shop: "A-one Electronics", purchase: "02/12/21", warranty: "02/12/22" },
+    { id: 1, title: "Microwave", brand: "Phillips", img: owen, shop: "A-one Electronics", purchase: "07/06/2005", warranty: "02/12/22" },
     { id: 2, title: "Microwave", brand: "Phillips", img: owen, shop: "A-one Electronics", purchase: "02/12/21", warranty: "02/12/23" },
     { id: 3, title: "Microwave", brand: "Phillips", img: owen, shop: "A-one Electronics", purchase: "02/12/21", warranty: "02/12/22" },
     { id: 4, title: "Microwave", brand: "Phillips", img: owen, shop: "A-one Electronics", purchase: "02/12/21", warranty: "02/12/22" },

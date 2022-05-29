@@ -1,11 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './navbar.scss'
 
-import profile from '../../assets/profile.jpg'
+import profile from '../../assets/salepro.png'
 
-const Navbar = () => {
-
+const Navbar2 = () => {
     const closeBar = () => {
         const l = document.getElementById('con');
         l.style.display = 'none';
@@ -19,18 +17,18 @@ const Navbar = () => {
             <div className='navCon' id='con' onClick={closeBar}></div>
             <div className='sidebar' id='slide' onClick={e => e.stopPropagation()}>
                 <img src={profile} alt="" />
-                <p>Evam M</p>
-                <div>My Profile</div>
+                <p>A-One Electronics</p>
+                <div>My Store</div>
                 <hr />
                 <div>My Products</div>
                 <hr />
-                <div>Best Offer</div>
+                <div>My Sales</div>
                 <hr />
-                <div><Link to='/add_invoice' id='link'>Add Invoice</Link></div>
+                <div>About Us</div>
                 <hr />
-                <div><Link to='/service_center' id='link'>Service Center</Link></div>
+                <div><Link to='/' id='link'>Switch To User</Link></div>
                 <hr />
-                <div><Link to='/dashBoard' id='link'>Switch To Seller</Link></div>
+                <div><Link to='/scan' id='link'>Generate Invoice</Link></div>
                 <hr />
                 <div><Link to='/login' id='link'>Logout</Link></div>
             </div>
@@ -38,4 +36,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar2

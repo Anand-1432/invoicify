@@ -45,7 +45,7 @@ const AddCustomer = () => {
                 <div className='addCustomer'>
 
                     <div className='header'>
-                        <Link to="/" className='btn back'><ArrowBackIcon fontSize='large' /></Link>
+                        <Link to="/dashboard" className='btn back'><ArrowBackIcon fontSize='large' /></Link>
                     </div>
 
                     <div className='heading'>Add Customer</div>

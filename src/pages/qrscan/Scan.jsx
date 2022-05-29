@@ -41,7 +41,7 @@ const Scan = () => {
             <div className='main'>
                 <div className='scan'>
                     <div className='header'>
-                        <Link to="/" className='btn back'><ArrowBackIcon fontSize='large' /></Link>
+                        <Link to="/dashboard" className='btn back'><ArrowBackIcon fontSize='large' /></Link>
                     </div>
                     <p className='heanding'>Scan QR on Product</p>
 
@@ -57,7 +57,7 @@ const Scan = () => {
                     </div>
                     <p className='instruction'>Align QR inside square</p>
                     <p className='result'>{data}</p>
-                    <button className='btn manually'>Enter Details Manually</button>
+                    <Link to='/add_details_manually' className='btn manually'>Enter Details Manually</Link>
 
                 </div>
             </div>

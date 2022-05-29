@@ -1,0 +1,94 @@
+.userDetails {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+
+    .header {
+        width: 100%;
+        height: 60px;
+        background-color: #0F55A7;
+    }
+
+    .profileCon {
+        width: 100%;
+        display: grid;
+        place-content: center;
+        margin-top: 100px;
+
+        img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+        }
+    }
+
+    .fileSection {
+        width: 160px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #0F55A7;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #0F55A7;
+        font-weight: 700;
+        position: relative;
+
+        input {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    .fileSection:hover {
+        background-color: #0F55A7;
+        color: white;
+        box-shadow: 1px 1px 10px rgb(167, 173, 193);
+    }
+
+    form {
+        width: 320px;
+        margin: auto;
+
+        .icon {
+            position: relative;
+            top: 38px;
+            left: 10px;
+            color: #0F55A7;
+        }
+
+        input {
+            line-height: 35px;
+            padding-left: 50px;
+            border-color: #0F55A7;
+            background-color: rgb(245, 248, 252);
+            font-weight: 600;
+        }
+
+        .btn{
+            width: 320px;
+            background-color: #0F55A7;
+            color: white;
+            margin-top: 100px;
+        }
+    }
+
+}
+
+@media (max-width:1000px) {
+    .userDetails {
+        height: 800px;
+    }
+}
+
+@media (max-width:400px) {
+    .userDetails {
+        height: 101.9vh;
+    }
+}
