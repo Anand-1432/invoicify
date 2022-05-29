@@ -13,7 +13,7 @@ const UserType = () => {
         navigate('/user_details')
     }
     const goToOwner = () =>{
-        navigate('/dashboard');
+        navigate('/store_register');
     }
 
     return (

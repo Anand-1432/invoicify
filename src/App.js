@@ -10,6 +10,7 @@ import Product from "./pages/product/Product";
 import Scan from "./pages/qrscan/Scan";
 import Sales from "./pages/sales/Sales";
 import Service from "./pages/service/Service";
+import Register from "./pages/store_register/Register";
 import UserDetails from "./pages/user_details/UserDetails";
 import UserType from "./pages/user_type/UserType";
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/add_customer" element={<AddCustomer/>}/>
       <Route path="/dashBoard" element={<DashBoard/>}/>
       <Route path="/sales" element={<Sales/>}/>
+      <Route path="/store_register" element={<Register/>}/>
       <Route path="/add_details_manually" element={<Manually/>}/>
 
     </Routes>
