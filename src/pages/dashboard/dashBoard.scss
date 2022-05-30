@@ -8,7 +8,6 @@
 .dash {
 
     position: relative;
-
     width: 400px;
     height: 100vh;
     background-color: rgb(245, 248, 252);
@@ -153,5 +152,25 @@
 @media (max-width:400px) {
     .dash {
         height: 101.9vh;
+    }
+}
+
+@media (max-width:380px) {
+    .dash{
+        .Nav{
+           img{
+               left: 47px;
+           }
+           p{
+               right: 25px;
+           }
+        }
+
+        .chartCon, .sellingBrand{
+            margin-left: 40px;
+        }
+        .companyCon{
+            padding-left: 20px;
+        }
     }
 }

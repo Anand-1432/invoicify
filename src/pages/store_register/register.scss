@@ -109,3 +109,11 @@
         height: 101.9vh;
     }
 }
+
+@media (max-width:380px) {
+    .register {
+        form{
+            margin-left: 50px;
+        }
+    }
+}

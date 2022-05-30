@@ -89,6 +89,20 @@
 
 @media (max-width:400px) {
     .userDetails {
-        height: 101.9vh;
+        height: 100vh;
+    }
+}
+@media (max-width:380px) {
+    .userDetails {
+        .profileCon{
+            img{
+                margin-left: 35px;
+            }
+        }
+
+         form{
+             margin-left: 50px;
+         }
+
     }
 }

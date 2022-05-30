@@ -168,10 +168,19 @@
 
 @media (max-width:420px) {
     .productPage {
-        height: 101.9vh;
+        height: 100vh;
 
-        .content{
-            margin-left: 35px;
+        .content, .phead{
+            margin-left: 32px;
+        }
+    }
+}
+@media (max-width:380px) {
+    .productPage {
+        height: 100vh;
+
+        .content, .phead{
+            margin-left: 40px;
         }
     }
 }

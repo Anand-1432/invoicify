@@ -108,6 +108,18 @@
 
 @media (max-width:400px) {
     .add {
-        height: 101.9vh;
+        height: 100vh;
+    }
+}
+
+@media (max-width:380px) {
+    .add{
+        select, input, .save{
+            margin-left: 50px;
+        }
+
+        .uploadSection{
+            margin-left: 85px;
+        }
     }
 }

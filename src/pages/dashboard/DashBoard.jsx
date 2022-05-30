@@ -79,7 +79,7 @@ const DashBoard = () => {
                                 </linearGradient>
                             </defs>
 
-                            <XAxis dataKey="day" interval={'preserveStartEnd'} scale="point" padding={{ left: 10, right: 10 }} />
+                            <XAxis dataKey="day" interval={'preserveStartEnd'} scale="point" padding={{ left: 12, right: 12 }} />
 
                             <Tooltip />
                             <CartesianGrid strokeDasharray="3 3" />

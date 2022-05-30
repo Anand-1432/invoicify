@@ -39,8 +39,7 @@
 
     form {
         width: 300px;
-        // margin: auto;
-        margin-left: 60px;
+        margin: auto;
     }
 
     p {
@@ -138,9 +137,17 @@
     }
 }
 
-@media (max-width:420px) {
+@media (max-width:380px) {
     .home {
         height: 101.9vh;
+
+        .navBar{
+            margin-left: 50px;
+        }
+
+        form{
+            margin-left: 67px;
+        }
 
         .productContainer{
             width: 95%;
