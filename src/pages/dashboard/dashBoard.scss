@@ -47,6 +47,40 @@
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgb(155, 155, 155);
         margin-top: 50px;
+        padding-top: 40px;
+
+        .week{
+            width: 100%;
+            line-height: 40px;
+            // background-color: red;
+            position: relative;
+
+            .btn1{
+                position: absolute;
+                top:0px;
+                left: 30px;
+                color: #B4C4FF;
+            }
+            .btn2{
+                position: absolute;
+                top:0px;
+                right: 30px;
+                color: #B4C4FF;
+            }
+             
+            p{
+                text-align: center;
+                font-weight: 600;
+                color: #0F55A7;
+            }
+        }
+
+        .recharts-surface{
+            font-size: 12px;
+            margin-top: -5px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
     }
 
     .sellingBrand {
