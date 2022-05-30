@@ -7,6 +7,8 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Footer from '../../components/footer/Footer';
 import salepro from '../../assets/salepro.png';
 import Navbar2 from '../../components/navbar2/Navbar2';
+import Company from '../../components/company/Company';
+import BrandProgress from '../../components/TopBrandProgress/BrandProgress';
 
 const DashBoard = () => {
 
@@ -21,7 +23,13 @@ const DashBoard = () => {
         { day: 'Sun', amt: 4100 },
     ];
 
-
+    const TopBrand = [
+        { name: 'Samsung', percent: 80 },
+        { name: 'Apple', percent: 60 },
+        { name: 'Vivo', percent: 40 },
+        { name: 'Xiaomi', percent: 20 },
+        { name: 'Others', percent: 5 },
+    ]
 
     const openNavbar = () => {
 
@@ -48,11 +56,11 @@ const DashBoard = () => {
 
                     <div className='chartCon'>
 
-                     <div className='week'>
-                        <button className='btn btn1'><ArrowBackIosIcon fontSize='small'/></button>
-                         <p>11-17 April</p>
-                        <button className='btn btn2'><ArrowForwardIosIcon fontSize='small'/></button>
-                     </div>
+                        <div className='week'>
+                            <button className='btn btn1'><ArrowBackIosIcon fontSize='small' /></button>
+                            <p>11-17 April</p>
+                            <button className='btn btn2'><ArrowForwardIosIcon fontSize='small' /></button>
+                        </div>
 
                         {/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */}
                         <BarChart
@@ -60,7 +68,7 @@ const DashBoard = () => {
                             width={280}
                             height={160}
                             data={data}
-                            margin={{top: 0, right: 0, left: 0, bottom:2}}
+                            margin={{ top: 0, right: 0, left: 0, bottom: 2 }}
                             barSize={12}
                         >
 
@@ -83,10 +91,19 @@ const DashBoard = () => {
 
 
                     </div>
-                    <div className='sellingBrand'></div>
+                    <div className='sellingBrand'>
+                        <div className='top'>Top Selling Brands</div>
+
+                        {TopBrand.map((value, index) => {
+                            return (
+                                <BrandProgress key={index} name={value.name} percent={value.percent} />
+                            )
+                        })}
+
+                    </div>
 
                     <div className='companyCon'>
-                        <div className='company'></div>
+                        <Company />
                     </div>
 
                     <Footer />

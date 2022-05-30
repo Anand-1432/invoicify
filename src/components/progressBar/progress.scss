@@ -1,0 +1,10 @@
+#progressBar{
+    width: 0%;
+    height: 14px;
+    background:linear-gradient(90deg,#E54CFE, #0F55A7);
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 8px 0px 0px 8px;
+}
