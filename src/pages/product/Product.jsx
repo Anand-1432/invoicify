@@ -14,7 +14,7 @@ const Product = () => {
   const location = useLocation();
 
   const shower = () =>{
-    document.getElementById("caller").style.right = '20px'
+    document.getElementById("caller").style.right = '13px'
   }
 
   const hidder = () =>{
@@ -35,7 +35,7 @@ const Product = () => {
             <div className='help'>
               <div  onClick={(e)=>{e.stopPropagation(); shower()}} ><HeadsetMicIcon/></div>
               <p>Helpline</p>
-              <section id='caller'>
+              <section id='caller' onClick={e=>e.stopPropagation()}>
                 <span id='sp1'><CallIcon/></span>
                 <span id='sp2'><ChatIcon/></span>
               </section>
