@@ -13,6 +13,7 @@ import Footer from '../../components/footer/Footer';
 
 const AddCustomer = () => {
 
+    const [login, setlogin] = useState(false);
     ////////////////////////////////////////////////////////////////
     const [time, setTime] = useState(90);
     const [state, setstate] = useState(false);
@@ -22,16 +23,23 @@ const AddCustomer = () => {
         e.preventDefault();
 
         setstate(true);
-
-        document.getElementById("subBtn").innerHTML = "Login";
         document.getElementById("resend").style.display = "block";
+        setlogin(true);
 
     }
 
     useEffect(() => {
         if (state) {
             const update = () => {
-                setTime(pre => pre -= 1);
+                setTime((pre) => {
+                    if (pre > 0) {
+                        return (
+                            pre -= 1
+                        )
+                    } else {
+                        return (0);
+                    }
+                });
             }
             setInterval(update, 1000);
         }
@@ -63,13 +71,17 @@ const AddCustomer = () => {
                             <div><button onClick={(e) => { e.preventDefault(); setTime(90) }}>Resend</button></div>
                         </div>
 
-                        <button type='submit' id='subBtn' className='btn btn2 btn-primary' onClick={gernerate}>Generate OTP</button>
+                        {!login ?
+                            <button type='submit' id='subBtn' className='btn btn2 btn-primary' onClick={gernerate}>Generate OTP</button>
+                            : <button type='submit' id='subBtn' className='btn btn2 btn-primary'>Submit</button>
+                        }
+
                     </form>
 
                     <div className='footCon'>
                         <Footer />
                     </div>
-                    
+
                 </div>
             </div>
         </>

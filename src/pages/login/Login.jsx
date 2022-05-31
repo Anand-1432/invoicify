@@ -4,7 +4,7 @@ import CallIcon from '@material-ui/icons/Call';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
-    
+
     const [login, setlogin] = useState(false);
     const navigate = useNavigate();
 
@@ -25,14 +25,22 @@ const Login = () => {
     useEffect(() => {
         if (state) {
             const update = () => {
-                setTime(pre => pre -= 1);
+                setTime((pre) => {
+                    if (pre > 0) {
+                        return (
+                            pre -= 1
+                        )
+                    } else {
+                        return (0);
+                    }
+                });
             }
             setInterval(update, 1000);
         }
     }, [state]);
 
-    
-    const navigating = () =>{
+
+    const navigating = () => {
         navigate('/select_user_type');
     }
 
