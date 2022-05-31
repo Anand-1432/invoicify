@@ -106,7 +106,10 @@ const DashBoard = () => {
                         <Company />
                     </div>
 
-                    <Footer />
+                    <div className='footCon'>
+                        <Footer />
+                    </div>
+
                 </div>
             </div>
         </>

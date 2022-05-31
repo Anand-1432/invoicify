@@ -3,7 +3,7 @@ import './footer.scss'
 import { NavLink, Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
-import img from '../../assets/conImg.jpg';
+import img from '../../assets/conImg.png';
 
 
 // import homeicon from '../../assets/homeicon.png';

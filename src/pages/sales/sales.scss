@@ -1,11 +1,13 @@
 .sales {
 
-    display: flex;
-    flex-direction: column;
-
     width: 400px;
     height: 100vh;
     background-color: white;
+
+    .footCon{
+        position: fixed;
+        bottom: 0px;
+    }
 }
 
 @media (max-width:1000px) {

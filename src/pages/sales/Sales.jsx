@@ -7,7 +7,11 @@ const Sales = () => {
     <>
         <div className='main'>
             <div className='sales'>
+
+               <div className='footCon'>
                 <Footer/>
+               </div>
+
             </div>
         </div>
     </>

@@ -13,7 +13,7 @@ import Footer from '../../components/footer/Footer';
 
 const AddCustomer = () => {
 
-////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
     const [time, setTime] = useState(90);
     const [state, setstate] = useState(false);
 
@@ -36,7 +36,7 @@ const AddCustomer = () => {
             setInterval(update, 1000);
         }
     }, [state]);
-//////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////
 
 
     return (
@@ -66,8 +66,10 @@ const AddCustomer = () => {
                         <button type='submit' id='subBtn' className='btn btn2 btn-primary' onClick={gernerate}>Generate OTP</button>
                     </form>
 
-                    <Footer/>
-
+                    <div className='footCon'>
+                        <Footer />
+                    </div>
+                    
                 </div>
             </div>
         </>
