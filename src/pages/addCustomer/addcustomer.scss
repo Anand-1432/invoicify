@@ -33,6 +33,10 @@
     form {
         width: 320px;
         margin-left: 50px;
+
+        #subBtn{
+            margin-bottom: 120px;
+        }
     }
 
     p {
@@ -89,6 +93,7 @@
     .footCon{
         position: fixed;
         bottom: 0px;
+        z-index: 50;
     }
 
 }
