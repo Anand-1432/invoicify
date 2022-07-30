@@ -25,7 +25,7 @@ const Product = () => {
     <>
       <div className='main'>
 
-        <div className='productPage' onClick={hidder}>
+        <div className='productPage1' onClick={hidder}>
 
           <Link to="/" className='btn goback'><ArrowBackIcon fontSize='large'/></Link>
 

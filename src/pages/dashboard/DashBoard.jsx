@@ -5,7 +5,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import Footer from '../../components/footer/Footer';
-import salepro from '../../assets/salepro.png';
+import salepro from '../../assets/salepro1.png';
 import Navbar2 from '../../components/navbar2/Navbar2';
 import Company from '../../components/company/Company';
 import BrandProgress from '../../components/TopBrandProgress/BrandProgress';

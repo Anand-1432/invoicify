@@ -1,0 +1,123 @@
+.innerCate {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+    position: relative;
+
+    .header {
+        width: 100%;
+        height: 85px;
+        background-color: #0F55A7;
+        display: grid;
+        grid-template-columns: 78px 1fr 70px;
+        padding-top: 30px;
+
+        .d1 {
+
+            img {
+                width: 35px;
+                height: auto;
+                margin-left: 21px;
+                margin-top: 6px;
+            }
+            #on {
+                display: none !important;
+            }
+
+            #off {
+                display: inline-block !important;
+            }
+        }
+
+        .d2 {
+            position: relative;
+
+            input {
+                color: rgb(255, 255, 255, 0.9);
+                width: 100%;
+                line-height: 40px;
+                background-color: rgb(255, 255, 255, 0.1);
+                border: none;
+                border-radius: 5px;
+                padding-left: 55px;
+                outline: none;
+
+                &::placeholder {
+                    color: rgb(255, 255, 255, 0.5);
+                }
+            }
+
+            span {
+                position: absolute;
+                left: 15px;
+                top: 7px;
+                color: rgb(255, 255, 255, 0.6);
+            }
+        }
+
+        .d3 {
+            padding-left: 15px;
+            padding-top: 2.5px;
+            color: white;
+        }
+    }
+
+    .opt {
+        width: 100%;
+        height: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        border-bottom: 1px solid  rgb(245, 248, 252);
+
+        #d4,
+        #d5 {
+            display: grid;
+            place-content: center;
+            color: #0F55A7;
+
+            img {
+                margin-right: 2px;
+            }
+        }
+
+        #d4 {
+            border-right: 1px solid rgb(245, 248, 252);
+        }
+
+        #d5 {
+            border-left: 1px solid rgb(245, 248, 252);
+        }
+    }
+
+    .dataBox{
+        height: 81.6vh;
+        padding-bottom: 2px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+}
+
+
+@media (max-width:500px) {
+
+    .innerCate {
+        width: 100%;
+
+        .header {
+            .d1 {
+                #on {
+                    display: inline-block !important;
+                }
+    
+                #off {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+}

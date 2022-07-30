@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import profile from '../../assets/salepro.png'
+import profile from '../../assets/salepro1.png'
 
 const Navbar2 = () => {
     const closeBar = () => {
@@ -16,21 +16,23 @@ const Navbar2 = () => {
         <>
             <div className='navCon' id='con' onClick={closeBar}></div>
             <div className='sidebar' id='slide' onClick={e => e.stopPropagation()}>
-                <img src={profile} alt="" />
+
+                <Link to="/profile"><img src={profile} alt="" /></Link>
                 <p>A-One Electronics</p>
-                <div>My Store</div>
-                <hr />
-                <div>My Products</div>
+                <div>My E-card</div>
                 <hr />
                 <div>My Sales</div>
                 <hr />
-                <div>About Us</div>
+                <div><Link to='/order' id='link'>Place Order</Link></div>
+                <hr />
+                <div>Order History</div>
                 <hr />
                 <div><Link to='/' id='link'>Switch To User</Link></div>
                 <hr />
                 <div><Link to='/scan' id='link'>Generate Invoice</Link></div>
                 <hr />
                 <div><Link to='/login' id='link'>Logout</Link></div>
+
             </div>
         </>
     )
