@@ -4,6 +4,30 @@
     background-color: white !important;
     overflow: hidden;
     position: relative;
+    max-height: 850px;
+
+    #b5{
+        width: 35px;
+        min-width: 10px;
+        height: 35px;
+        background-color: rgb(198, 198, 198, 0.5);;
+        position: absolute;
+        top:40px;
+        left:20px;
+        z-index: 2;
+        color: white;
+    }
+    #b6{
+        width: 35px;
+        min-width: 10px;
+        height: 35px;
+        background-color: rgb(198, 198, 198, 0.5);;
+        position: absolute;
+        top:40px;
+        right:20px;
+        z-index: 2;
+        color: white;
+    }
 
     .carBox {
         width: 100%;
@@ -15,6 +39,7 @@
     .empty {
         width: 100%;
         height: 100vh;
+        max-height: 850px;
         overflow-y: scroll;
 
         &::-webkit-scrollbar {
@@ -28,7 +53,7 @@
             position: relative;
             width: 100%;
             height: auto;
-            background-color: rgb(245, 248, 252);
+            background-color: white;
             border-radius: 40px 40px 0px 0px;
             box-shadow: 1px 1px 15px rgb(209, 209, 209);
             margin-top: 47.5vh;
@@ -118,23 +143,23 @@
                     }
                 }
 
-                .off3{
+                .off3 {
                     display: grid;
                     place-content: center;
 
-                    .bt{
+                    .bt {
                         min-width: 30px;
                         width: 30px;
                         height: 30px;
                         border-radius: 50%;
-                        background-color: rgb(212, 212, 212,0.8);
+                        background-color: rgb(212, 212, 212, 0.8);
                         color: #979797;
                         margin-top: -20px;
                     }
-                    
+
                 }
 
-                #p{
+                #p {
                     position: absolute;
                     bottom: 10px;
                     right: 25px;
@@ -244,7 +269,7 @@
     }
 
 
-    .offerDes{
+    .offerDes {
         position: absolute;
         z-index: 20;
         width: 100%;
@@ -256,21 +281,22 @@
         left: 0px;
         bottom: -240px;
         transition: .5s;
-        
-        section{
+
+        section {
             font-size: 20px;
             font-weight: 500;
             color: #474747;
         }
-        p{
+
+        p {
             color: #797979;
             font-size: 14px;
         }
     }
 
-    .cover1{
+    .cover1 {
         position: absolute;
-        top:0px;
+        top: 0px;
         left: 0px;
         z-index: 15;
         width: 100%;
@@ -285,7 +311,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 @media (max-width:500px) {
-    .productPage{
+    .productPage {
         width: 100%;
     }
 }

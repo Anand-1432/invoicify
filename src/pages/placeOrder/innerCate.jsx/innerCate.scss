@@ -3,6 +3,8 @@
     height: 100vh;
     background-color: rgb(245, 248, 252);
     position: relative;
+    overflow: hidden;
+    max-height: 850px;
 
     .header {
         width: 100%;
@@ -75,9 +77,11 @@
             display: grid;
             place-content: center;
             color: #0F55A7;
+            cursor: pointer;
 
-            img {
-                margin-right: 2px;
+            span{
+                position: relative;
+                top:-2px;
             }
         }
 
@@ -92,12 +96,64 @@
 
     .dataBox{
         height: 81.6vh;
+        max-height: 714px;
         padding-bottom: 2px;
         overflow-y: scroll;
         &::-webkit-scrollbar{
             display: none;
         }
     }
+
+
+    #cover3{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.4);
+        position: absolute;
+        top:0px;
+        left: 0px;
+        z-index: 5;
+        display: none;
+        cursor: pointer;
+    }
+
+    #filter, #category1{
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        position: absolute;
+        bottom: -250px;
+        border-radius: 30px 30px 0px 0px;
+        z-index: 10;
+        transition: .4s;
+
+        div{
+            text-align: center;
+            line-height: 60px;
+            font-size: 20px;
+            font-weight: 500;
+            border-bottom: 1px solid #D9D9D9;
+            color: #797979;
+            letter-spacing: .6px;
+            margin-bottom: 10px;
+        }
+        .bt{
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 10px;
+            line-height: 30px;
+            color: #797979;
+            text-transform: none;
+            letter-spacing: .6px;
+        }
+    }
+
+    #category1{
+        height: 400px;
+        bottom: -400px;
+    }
+
+
 
 }
 

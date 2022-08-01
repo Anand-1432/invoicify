@@ -2,10 +2,14 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AddCustomer from "./pages/addCustomer/AddCustomer";
 import Add from "./pages/add_invoice/Add";
+import Cart from "./pages/cart/Cart";
+import Distributer from "./pages/cart/distributer/Distributer";
 import DashBoard from "./pages/dashboard/DashBoard";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Manually from "./pages/manually/Manually";
+import DistributerHistory from "./pages/orderHistory/distributerHistory/DistributerHistory";
+import History from "./pages/orderHistory/History";
 import Category from "./pages/placeOrder/category/Category";
 import InnerCate from "./pages/placeOrder/innerCate.jsx/InnerCate";
 import Order from "./pages/placeOrder/order/Order";
@@ -51,6 +55,12 @@ function App() {
       <Route path="/order/brand" element={<Category/>}/>
       <Route path="/order/brand/category" element={<InnerCate/>}/>
       <Route path="/order/brand/category/product" element={<ProductPage/>}/>
+      
+      <Route path="/cart" element={<Cart/>}/>
+      <Route path="/cart/distributer" element={<Distributer/>}/>
+
+      <Route path="/history" element={<History/>}/>
+      <Route path="/history/distributer" element={<DistributerHistory/>}/>
 
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/profile/editprofile" element={<EditProfile/>}/>

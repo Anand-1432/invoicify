@@ -25,7 +25,7 @@ const Navbar2 = () => {
                 <hr />
                 <div><Link to='/order' id='link'>Place Order</Link></div>
                 <hr />
-                <div>Order History</div>
+                <div><Link to='/history' id='link'>Order History</Link></div>
                 <hr />
                 <div><Link to='/' id='link'>Switch To User</Link></div>
                 <hr />

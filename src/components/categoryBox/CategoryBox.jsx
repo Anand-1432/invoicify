@@ -4,8 +4,6 @@ import { Button } from '@material-ui/core'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { useNavigate } from 'react-router-dom';
 
-import mix from '../../assets/mix.png'
-
 
 const CategoryBox = (props) => {
 
@@ -17,6 +15,10 @@ const CategoryBox = (props) => {
 
         navigate("/order/brand/category", {state:{data}});
 
+    }
+
+    const directSend = (data) =>{
+        navigate("/order/brand/category/product", {state:{data}});
     }
 
 
@@ -35,15 +37,18 @@ const CategoryBox = (props) => {
                     if (index <= 2) {
                         return (
 
-                            <div className='cateBox' key={index}>
+                            <div className='cateBox' key={index} onClick={()=>directSend(productArray[index])}>
                                 <div className='imgCon'>
-                                    <img src={mix} alt="" />
+                                    <img src={val.images[0]} alt="" />
                                 </div>
-                                <section> {val.price} </section>
+                                <section> {val.price}.00 </section>
                                 <p> {val.productName} </p>
                             </div>
 
                         );
+                    }
+                    else{
+                        return(null);
                     }
                 })}
 

@@ -4,10 +4,15 @@ import Carousel from '../../../components/carousel/Carousel'
 import './productPage.scss'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import offer from '../../../assets/offer.png'
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
+
 
 const ProductPage = () => {
 
+    const navigate = useNavigate();
     const location = useLocation();
 
     const product = location.state.data;
@@ -21,14 +26,29 @@ const ProductPage = () => {
         document.querySelector(".cover1").style.display = "none";
     }
 
+    const addCart = () =>{
+       navigate("/cart");
+    }
+
+    const [quantity, setQuantity] = useState(1);
+
+   const goBack = () =>{
+      navigate(-1);
+   }
+
 
     return (
         <>
             <div className='main'>
                 <div className='productPage' onClick={hideDes}>
 
+                <Button variant='contained' id='b5' onClick={goBack}><ArrowBackIcon/></Button>
+               <Link to="/cart"><Button variant='contained' id='b6'><LocalGroceryStoreIcon/></Button></Link>
+
                     <div className='carBox'>
-                        <Carousel />
+                        <Carousel 
+                            images={product.images}
+                        />
                     </div>
 
 
@@ -42,7 +62,7 @@ const ProductPage = () => {
                             <div className='price'>
                                 <section>Festive Offer - {product.offerPercent}% 0ff</section>
                                 <div className='d1'> {product.oldPrice}/-</div>
-                                <div className='d2'> {product.price} /-</div>
+                                <div className='d2'> {product.price}.00 /-</div>
                             </div>
 
                             <div className='offer'>
@@ -75,12 +95,12 @@ const ProductPage = () => {
                     </div>
 
                     <div className='footer'>
-                        <div className='d7'> <span>Price :</span> 6,598.00/-</div>
-                        <div className='d8'>Qty : 2
-                            <button className='but1'>-</button>
-                            <button className='but2'>+</button>
+                        <div className='d7'> <span>Price :</span> {product.price*quantity}.00 /-</div>
+                        <div className='d8'>Qty : {quantity}
+                            <button className='but1' onClick={()=>{ if(quantity>1){setQuantity(quantity-1)}}}>-</button>
+                            <button className='but2' onClick={()=>setQuantity(quantity+1)}>+</button>
                         </div>
-                        <div className='d9'> <Button variant='contained' className='cart'>Add To Cart</Button> </div>
+                        <div className='d9'> <Button variant='contained' className='cart' onClick={addCart}>Add To Cart</Button> </div>
                     </div>
 
                     <div className='offerDes'>

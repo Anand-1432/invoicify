@@ -1,21 +1,13 @@
 import React from 'react'
 import './address.scss'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Button } from '@material-ui/core';
-import { useState } from 'react';
 
 
 const Address = () => {
 
-    const navigate = useNavigate();
-
-    const [show, setShow] = useState(false);
-
-    const openBox = () => {
-        setShow(true);
-    }
 
     const Array = [
         {
@@ -29,6 +21,17 @@ const Address = () => {
             mobile: "123 456 7890",
         },
     ]
+
+    const showFilter = () =>{
+        document.getElementById("cover3").style.display = "block";
+        document.getElementById("filter").style.bottom = "0px";
+    }
+
+    const hideFilter = () =>{
+        document.getElementById("cover3").style.display = "none";
+        document.getElementById("filter").style.bottom = "-250px";
+    }
+
 
 
     return (
@@ -44,7 +47,7 @@ const Address = () => {
                     {Array.map((val, index) => {
                         return (
                             <div key={index} className='addressBox'>
-                                <div> {val.name} <button className='btn' onClick={() => openBox()}><MoreVertIcon /></button> </div>
+                                <div> {val.name} <button className='btn' onClick={showFilter}><MoreVertIcon /></button> </div>
                                 <p> {val.address} </p>
                                 <section> <span>Mobile </span> : {val.mobile} </section>
                             </div>
@@ -53,13 +56,16 @@ const Address = () => {
 
                     <Link to="/profile/address/addAddress"> <Button variant='contained' id='but1'>Add New</Button> </Link>
 
-                    {show ? <div id='cover'>
-                        <div id='optBox'>
-                            <Button variant='outlined' className='btn3' onClick={() => { setShow(false) }}>Make Default</Button>
-                            <Button variant='outlined' className='btn4' onClick={() => { navigate("/profile/address/editAddress") }}>Edit</Button>
-                            <Button variant='outlined' className='btn5' onClick={() => { setShow(false) }}>Delete</Button>
-                        </div>
-                    </div> : null}
+
+                    <div id='cover3' onClick={hideFilter}></div>
+
+                    <div id='filter'>
+                        <div>Select Option</div>
+                        <Button variant='outlined' className='bt' onClick={hideFilter}> Make Default </Button>
+                        <Button variant='outlined' className='bt' onClick={hideFilter}> Edit </Button>
+                        <Button variant='outlined' className='bt1' onClick={hideFilter}> Delete </Button>
+                    </div>
+
 
                 </div>
             </div>

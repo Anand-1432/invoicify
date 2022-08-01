@@ -1,0 +1,176 @@
+.groupPage {
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    padding: 15px;
+    position: relative;
+
+    .name {
+        color: #474747;
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    p {
+        color: #797979;
+        font-size: 12px;
+        padding-right: 30%;
+        margin-bottom: 8px;
+    }
+
+    section {
+        color: #797979;
+        font-size: 11px;
+    }
+
+    .value {
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        font-size: 11px;
+        color: #797979;
+    }
+
+    .amt {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-weight: 500;
+    }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+
+.ungroupedPage {
+    width: 100%;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    margin-Top: 10px;
+    padding-top: 10px;
+
+    .upper {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        border-bottom: 1px solid #D9D9D9;
+
+        .imgBox {
+            display: grid;
+            place-content: center;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .textBox {
+            padding-right: 30px;
+            font-weight: 500;
+
+            section {
+                color: #474747;
+                font-size: 18px;
+                margin-top: 5px;
+            }
+
+            div {
+                font-size: 12px;
+                color: #797979;
+                margin-top: 5px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-top: 8px;
+                color: #797979;
+
+                span {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+        font-weight: 500;
+
+        .left {
+            #offer{
+                color: #01B574;
+                font-size: 12px;
+                letter-spacing: .3px;
+            }
+            #button{
+                width: 100px;
+                height: 30px;
+                border: 1px solid #D9D9D9;
+                margin-top: 10px;
+                margin-left: 10px;
+                border-radius: 5px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                div{
+                    display: grid;
+                    place-content: center;
+                    color: #0F55A7;
+                }
+                .btt{
+                    cursor: pointer;
+                }
+                #digit{
+                    border: 1px solid #D9D9D9;
+                    border-top: none;
+                    border-bottom: none;
+                }
+            }
+        }
+        
+        .right {
+            text-align: right;
+            
+            div{
+                font-size: 14px;
+                color: #797979;
+                text-decoration: line-through;
+            }
+            section {
+                font-size: 20px;
+                color: #474747;
+            }
+        }
+    }
+
+    .lower{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        line-height: 50px;
+        color: #797979;
+        font-size: 15px;
+
+        .d1{
+            text-align: center;
+            border-top: 3px solid rgb(217, 217, 217, 0.4);
+            border-right: 1.5px solid rgb(217, 217, 217, 0.4);
+            cursor: pointer;
+        }
+        .d2{
+            text-align: center;
+            border-top: 3px solid rgb(217, 217, 217, 0.4);
+            border-left: 1.5px solid rgb(217, 217, 217, 0.4);
+            cursor: pointer;
+        }
+        span{
+            color: rgb(107, 139, 175, 0.85);
+            position: relative;
+            top:-2px;
+        }
+    }
+
+}

@@ -1,0 +1,95 @@
+.orderBoxPage {
+    width: 100%;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    margin-Top: 10px;
+    padding-top: 10px;
+
+    .upper {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        border-bottom: 1px solid #D9D9D9;
+
+        .imgBox {
+            display: grid;
+            place-content: center;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .textBox {
+            padding-right: 30px;
+            font-weight: 500;
+
+            section {
+                color: #474747;
+                font-size: 18px;
+                margin-top: 5px;
+            }
+
+            div {
+                font-size: 12px;
+                color: #797979;
+                margin-top: 5px;
+            }
+
+            p {
+                font-size: 12px;
+                margin-top: 8px;
+                color: #797979;
+
+                span {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+        font-weight: 500;
+
+        .left {
+            #offer {
+                color: #01B574;
+                font-size: 12px;
+                letter-spacing: .3px;
+            }
+
+            #button {
+                width: 80px;
+                height: 25px;
+                border: 1px solid #D9D9D9;
+                margin-top: 10px;
+                margin-left: 20px;
+                border-radius: 5px;
+                display: grid;
+                place-content: center;
+                font-size: 12px;
+                color: #0F55A7;
+            }
+        }
+
+        .right {
+            text-align: right;
+
+            div {
+                font-size: 14px;
+                color: #797979;
+                text-decoration: line-through;
+            }
+
+            section {
+                font-size: 20px;
+                color: #474747;
+            }
+        }
+    }
+
+}
