@@ -3,6 +3,7 @@
     height: 100vh;
     background-color: rgb(245, 248, 252);
     position: relative;
+    max-height: 850px;
 
     .goback{
         position: absolute;
@@ -14,7 +15,7 @@
 
     .image{
         width: 100%;
-        height: auto;
+        max-height: 400px;
         border-radius: 0px 0px 40px 40px;
         box-shadow: 1px 1px 10px rgb(218, 216, 216);
     }
@@ -90,7 +91,10 @@
 
     .content{
         width: 85%;
-        margin-left: 30px;
+        padding: 0px 15px 0px 15px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
         .data{
             margin-left: -12px;
@@ -160,27 +164,8 @@
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:500px) {
     .productPage {
-        height: 800px;
-    }
-}
-
-@media (max-width:420px) {
-    .productPage {
-        height: 100vh;
-
-        .content, .phead{
-            margin-left: 32px;
-        }
-    }
-}
-@media (max-width:380px) {
-    .productPage {
-        height: 100vh;
-
-        .content, .phead{
-            margin-left: 40px;
-        }
+        width: 100%;
     }
 }

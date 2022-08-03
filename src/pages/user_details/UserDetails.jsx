@@ -6,15 +6,23 @@ import PersonIcon from '@material-ui/icons/Person';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 import demo from '../../assets/demo.jpg';
+import check from '../../assets/check1.gif'
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 const UserDetails = () => {
-  
-  const navigate = useNavigate();
 
- const saveData = (e) =>{
-     e.preventDefault();
-     navigate('/');
- }
+  const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+  const { register, handleSubmit, formState: { errors } } = useForm();
+
+
+  const onSubmit = () => {
+    setShow(true);
+    setTimeout(() => navigate('/'), 2000);
+
+  }
+
 
   return (
     <>
@@ -27,20 +35,33 @@ const UserDetails = () => {
           </div>
 
 
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
 
             <div className='fileSection'>Add Profile Photo
               <input type="file" />
             </div>
-            <span className='icon'><PersonIcon /></span>
-            <input className="form-control" type="text" placeholder="Enter Your Name" />
 
-            <span className='icon'><MailOutlineIcon /></span>
-            <input className="form-control" type="text" placeholder="Enter Your Email" />
+            <div>
+              <span className='icon'><PersonIcon /></span>
+              <input className="form-control" type="text" placeholder="Enter Your Name" {...register("name", { required: "name is required!" })} />
+              <p>{errors.name?.message}</p>
+            </div>
 
-            <button className='btn' onClick={saveData}>Save</button>
+            <div>
+              <span className='icon'><MailOutlineIcon /></span>
+              <input className="form-control" type="email" placeholder="Enter Your Email" {...register("email", { required: "email is required!" , pattern:{value:/^\S+@\S+$/i, message:"Invalid email address!"}})} />
+              <p>{errors.email?.message}</p>
+            </div>
+
+            <button className='btn' type='submit'>Save</button>
 
           </form>
+
+          {show ? <div className='gifCon'>
+            <div>
+              <img src={check} alt="" />
+            </div>
+          </div> : null}
 
         </div>
       </div>

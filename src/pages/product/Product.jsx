@@ -44,20 +44,20 @@ const Product = () => {
             <section className='brName'>{location.state.brand}</section>
           </div>
 
-          <div className='container-fluid content'>
-            <div className='row'>
-              <div className='col-6 data'>
+          <div className='content'>
+            {/* <div className='row'> */}
+              <div className='data'>
                 <p>Purchased on</p>
                 <section>{location.state.purchase}</section>
                 <div id='bn'>{location.state.shop}</div>
                 <button className='btn btn-primary'>Service Center</button>
               </div>
-              <div className='col-6 data2'>
+              <div className='data2'>
                 <p>Warranty Upto</p>
                 <section>{location.state.warranty}</section>
                 <button className='btn'>Reciept</button>
               </div>
-            </div>
+            {/* </div> */}
           </div>
 
           <div className='howTo'>How To Use</div>
