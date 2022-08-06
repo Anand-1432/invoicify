@@ -20,15 +20,18 @@ const Navbar = () => {
             <div className='sidebar' id='slide' onClick={e => e.stopPropagation()}>
                 <img src={profile} alt="" />
                 <p>Evam M</p>
-                <div>My Profile</div>
+                <div><Link to="/user_profile" id='link'>My Profile</Link></div>
                 <hr />
-                <div>My Products</div>
+                {/* <div>My Products</div> */}
+                <div><Link to="/my_product" id="link">My Product</Link></div>
                 <hr />
-                <div>Best Offer</div>
+                {/* <div>Best Offer</div> */}
+                <div><Link to="/best_offer" id='link'>Best Offer</Link></div>
                 <hr />
-                <div><Link to='/add_invoice' id='link'>Add Invoice</Link></div>
-                <hr />
-                <div><Link to='/service_center' id='link'>Service Center</Link></div>
+                {/* <div><Link to='/add_invoice' id='link'>Add Invoice</Link></div> */}
+                <div><Link to='/add_warranty' id='link'>Add Warranty</Link></div>
+                {/* <hr /> */}
+                {/* <div><Link to='/service_center' id='link'>Service Center</Link></div> */}
                 <hr />
                 <div><Link to='/dashBoard' id='link'>Switch To Seller</Link></div>
                 <hr />

@@ -1,0 +1,40 @@
+.myprofile{
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+
+    .header {
+        width: 100%;
+        padding-top: 35px;
+        background-color: #0F55A7;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        .back {
+            color: white;
+            margin-top: -7px;
+        }
+    }
+
+    .centre{
+        width: 80%;
+        margin: auto;
+        margin-top: 20vh;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        div{
+            font-size: 25px;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #0F55A7;
+        }
+    }
+}

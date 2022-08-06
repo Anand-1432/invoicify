@@ -50,7 +50,7 @@ const Product = () => {
                 <p>Purchased on</p>
                 <section>{location.state.purchase}</section>
                 <div id='bn'>{location.state.shop}</div>
-                <button className='btn btn-primary'>Service Center</button>
+                <Link to="/service_center" className='btn btn-primary'>Service Center</Link>
               </div>
               <div className='data2'>
                 <p>Warranty Upto</p>
