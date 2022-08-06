@@ -20,65 +20,103 @@ const Sales = () => {
       brand: "Philips",
       model: "full model name",
       img: owen,
+      bestPrice: "4,236",
       amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
+      customer: "Mr. Rajesh Kumar",
+      productName: "Phillips Mocrowave Neo Series 244 ",
+      purchase: "02/12/2021",
+      warranty: "02/12/2022",
+      shop: "A-one Electronics",
+      gst: "18",
+      imei: "1242 -4235-1325-3523",
+
     },
+
     {
       name: "Microwave",
       brand: "Philips",
       model: "full model name",
       img: owen,
+      bestPrice: "4,236",
       amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
+      customer: "Mr. Rajesh Kumar",
+      productName: "Phillips Mocrowave Neo Series 244 ",
+      purchase: "02/12/2021",
+      warranty: "02/12/2022",
+      shop: "A-one Electronics",
+      gst: "18",
+      imei: "1242 -4235-1325-3523",
+
     },
+
     {
       name: "Microwave",
       brand: "Philips",
       model: "full model name",
       img: owen,
+      bestPrice: "4,236",
       amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
+      customer: "Mr. Rajesh Kumar",
+      productName: "Phillips Mocrowave Neo Series 244 ",
+      purchase: "02/12/2021",
+      warranty: "02/12/2022",
+      shop: "A-one Electronics",
+      gst: "18",
+      imei: "1242 -4235-1325-3523",
+
     },
+
     {
       name: "Microwave",
       brand: "Philips",
       model: "full model name",
       img: owen,
+      bestPrice: "4,236",
       amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
+      customer: "Mr. Rajesh Kumar",
+      productName: "Phillips Mocrowave Neo Series 244 ",
+      purchase: "02/12/2021",
+      warranty: "02/12/2022",
+      shop: "A-one Electronics",
+      gst: "18",
+      imei: "1242 -4235-1325-3523",
+
     },
+
     {
       name: "Microwave",
       brand: "Philips",
       model: "full model name",
       img: owen,
+      bestPrice: "4,236",
       amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
+      customer: "Mr. Rajesh Kumar",
+      productName: "Phillips Mocrowave Neo Series 244 ",
+      purchase: "02/12/2021",
+      warranty: "02/12/2022",
+      shop: "A-one Electronics",
+      gst: "18",
+      imei: "1242 -4235-1325-3523",
+
     },
+
     {
       name: "Microwave",
       brand: "Philips",
       model: "full model name",
       img: owen,
+      bestPrice: "4,236",
       amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
+      customer: "Mr. Rajesh Kumar",
+      productName: "Phillips Mocrowave Neo Series 244 ",
+      purchase: "02/12/2021",
+      warranty: "02/12/2022",
+      shop: "A-one Electronics",
+      gst: "18",
+      imei: "1242 -4235-1325-3523",
+
     },
-    {
-      name: "Microwave",
-      brand: "Philips",
-      model: "full model name",
-      img: owen,
-      amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
-    },
-    {
-      name: "Microwave",
-      brand: "Philips",
-      model: "full model name",
-      img: owen,
-      amt: "4,999",
-      customer: "Mr. Rajesh Kumar"
-    },
+
   ]
 
 
@@ -102,7 +140,7 @@ const Sales = () => {
           <div className='navBar'>
             <img id='Onbtn' src={vector} alt="..." onClick={openNavbar} />
             <img id='Offbtn' src={vector} alt="..." />
-           <Link to="/scan"><img id='pro' src={qr} alt="..." /></Link>
+            <Link to="/scan"><img id='pro' src={qr} alt="..." /></Link>
           </div>
 
           <hr />
@@ -125,8 +163,15 @@ const Sales = () => {
                   brand={v.brand}
                   model={v.model}
                   img={v.img}
+                  bestPrice={v.bestPrice}
                   amt={v.amt}
                   customer={v.customer}
+                  productName={v.productName}
+                  purchase={v.purchase}
+                  warranty={v.warranty}
+                  shop={v.shop}
+                  gst={v.gst}
+                  imei={v.imei}
                 />
 
               );

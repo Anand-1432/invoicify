@@ -1,6 +1,6 @@
 import React from 'react'
 import './address.scss'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Button } from '@material-ui/core';
@@ -8,7 +8,12 @@ import { Button } from '@material-ui/core';
 
 const Address = () => {
 
+    const navigate = useNavigate();
 
+    const goEdit = () =>{
+        navigate("/profile/address/editAddress");
+    }
+    
     const Array = [
         {
             name: "Devraaj Kumar",
@@ -62,7 +67,7 @@ const Address = () => {
                     <div id='filter'>
                         <div>Select Option</div>
                         <Button variant='outlined' className='bt' onClick={hideFilter}> Make Default </Button>
-                        <Button variant='outlined' className='bt' onClick={hideFilter}> Edit </Button>
+                        <Button variant='outlined' className='bt' onClick={goEdit}> Edit </Button>
                         <Button variant='outlined' className='bt1' onClick={hideFilter}> Delete </Button>
                     </div>
 

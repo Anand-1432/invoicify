@@ -29,6 +29,7 @@ import Editbank from "./pages/profile/bank/Editbank";
 import EditProfile from "./pages/profile/editprofile/EditProfile";
 import Profile from "./pages/profile/Profile";
 import Scan from "./pages/qrscan/Scan";
+import SaleData from "./pages/saleData/SaleData";
 import Sales from "./pages/sales/Sales";
 import Service from "./pages/service/Service";
 import Register from "./pages/store_register/Register";
@@ -61,6 +62,7 @@ function App() {
       <Route path="/add_customer" element={<AddCustomer/>}/>
       <Route path="/dashBoard" element={<DashBoard/>}/>
       <Route path="/sales" element={<Sales/>}/>
+      <Route path="/sales/product_data" element={<SaleData/>}/>
       <Route path="/store_register" element={<Register/>}/>
       <Route path="/add_details_manually" element={<Manually/>}/>
       <Route path="/order" element={<Order/>}/>

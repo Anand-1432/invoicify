@@ -45,7 +45,6 @@ const Product = () => {
           </div>
 
           <div className='content'>
-            {/* <div className='row'> */}
               <div className='data'>
                 <p>Purchased on</p>
                 <section>{location.state.purchase}</section>
@@ -57,7 +56,6 @@ const Product = () => {
                 <section>{location.state.warranty}</section>
                 <button className='btn'>Reciept</button>
               </div>
-            {/* </div> */}
           </div>
 
           <div className='howTo'>How To Use</div>

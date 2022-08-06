@@ -1,0 +1,143 @@
+.saleData {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+    position: relative;
+    max-height: 850px;
+
+    .btn{
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        color: white;
+        font-weight: 500;
+        padding: 0px;
+    }
+
+    .imgCon4 {
+        width: 100%;
+        height: 38%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0px 0px 40px 40px;
+        }
+    }
+
+    h4 {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .brand {
+        margin-left: 20px;
+        margin-top: -5px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #797979;
+    }
+
+    .gridBox {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+        font-size: 14px;
+
+        .right,
+        .left {
+            section {
+                color: #797979;
+                font-weight: 500;
+            }
+
+            div {
+                color: #C6C6C6;
+                font-size: 11px;
+                margin-top: 5px;
+            }
+        }
+
+        .right {
+            text-align: right;
+        }
+
+    }
+
+    .shop {
+        margin-left: 20px;
+        color: #C6C6C6;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        font-size: 14px;
+    }
+
+    .more{
+        font-weight: 500;
+        color: #474747;
+        margin-left: 20px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    table{
+        width: 90%;
+        margin: auto;
+        font-size: 14px;
+        color: #797979;
+        font-weight: 500;
+        margin-top: -10px;
+        margin-bottom: -10px;
+
+        td{
+            padding-top: 5px;
+        }
+
+        .bottom{
+            text-align: right;
+            width: 50%;
+        }
+    }
+
+    .total{
+        font-size: 14px;
+        margin-left: 20px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        font-weight: 500;
+        position: relative;
+
+        span{
+          position: absolute;
+          right: 20px;
+        }
+    }
+
+    .btnBox{
+        width: 100%;
+        text-align: center;
+
+        .bt{
+            text-transform: none;
+            font-weight: 500;
+            color: white;
+            background-color: #0F55A7;
+            font-size: 12px;
+            width: 150px;
+        }
+    }
+
+}
+
+//////////////////////////////////////////////////////////
+
+@media (max-width:500px) {
+    .saleData{
+        width: 100vw;
+    }
+}

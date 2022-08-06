@@ -1,12 +1,17 @@
 import React from 'react'
 import './bank.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Button } from '@material-ui/core';
 
 const Bank = () => {
 
+    const navigate = useNavigate();
+
+    const goEdit = () =>{
+        navigate("/profile/bank/editbank");
+    }
 
     const Array = [
         {
@@ -58,7 +63,7 @@ const Bank = () => {
                     <div id='filter'>
                         <div>Select Option</div>
                         <Button variant='outlined' className='bt' onClick={hideFilter}> Make Default </Button>
-                        <Button variant='outlined' className='bt' onClick={hideFilter}> Edit </Button>
+                        <Button variant='outlined' className='bt' onClick={goEdit}> Edit </Button>
                         <Button variant='outlined' className='bt1' onClick={hideFilter}> Delete </Button>
                     </div>
 
