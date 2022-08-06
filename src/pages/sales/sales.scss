@@ -38,16 +38,18 @@
        
        span{
            position: absolute;
-           right: 125px;
-           top:-3px;
+           right: 120px;
+           top:-4px;
            color: #0F55A7;
-       }
-
+        }
+        
         select{
-            width: 170px;
-            text-align: center;
+            background-color: red;
+            width: 150px;
+            text-align: right;
             position: absolute;
-            right: -15px;
+            padding-right: 5px;
+            right: 5px;
             font-size: 18px;
             border: none;
             color: #474747;

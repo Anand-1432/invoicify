@@ -7,6 +7,8 @@ import BestOffer from "./pages/BestOffer/BestOffer";
 import Cart from "./pages/cart/Cart";
 import Distributer from "./pages/cart/distributer/Distributer";
 import DashBoard from "./pages/dashboard/DashBoard";
+import Ecard from "./pages/e-card/Ecard";
+import Generate from "./pages/generate/Generate";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Manually from "./pages/manually/Manually";
@@ -54,6 +56,8 @@ function App() {
       {/* //////////////////////////////////////////////////////////// */}
 
       <Route path="/scan" element={<Scan/>}/>
+      <Route path="/ecard" element={<Ecard/>}/>
+      <Route path="/generate_invoice" element={<Generate/>}/>
       <Route path="/add_customer" element={<AddCustomer/>}/>
       <Route path="/dashBoard" element={<DashBoard/>}/>
       <Route path="/sales" element={<Sales/>}/>

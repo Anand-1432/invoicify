@@ -19,9 +19,10 @@ const Navbar2 = () => {
 
                 <Link to="/profile"><img src={profile} alt="" /></Link>
                 <p>A-One Electronics</p>
-                <div>My E-card</div>
+
+                <div><Link to="/ecard" id='link'>My E-card</Link></div>
                 <hr />
-                <div>My Sales</div>
+                <div><Link to="/sales" id='link'>My Sales</Link></div>
                 <hr />
                 <div><Link to='/order' id='link'>Place Order</Link></div>
                 <hr />
@@ -29,7 +30,7 @@ const Navbar2 = () => {
                 <hr />
                 <div><Link to='/' id='link'>Switch To User</Link></div>
                 <hr />
-                <div><Link to='/scan' id='link'>Generate Invoice</Link></div>
+                <div><Link to='/generate_invoice' id='link'>Generate Invoice</Link></div>
                 <hr />
                 <div><Link to='/login' id='link'>Logout</Link></div>
 

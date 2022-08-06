@@ -9,6 +9,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import SaleCard from '../../components/saleCard/SaleCard';
 
 import owen from '../../assets/owen.png'
+import { Link } from 'react-router-dom';
 
 const Sales = () => {
 
@@ -101,7 +102,7 @@ const Sales = () => {
           <div className='navBar'>
             <img id='Onbtn' src={vector} alt="..." onClick={openNavbar} />
             <img id='Offbtn' src={vector} alt="..." />
-            <img id='pro' src={qr} alt="..." />
+           <Link to="/scan"><img id='pro' src={qr} alt="..." /></Link>
           </div>
 
           <hr />

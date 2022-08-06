@@ -14,29 +14,29 @@ const History = () => {
     const navigate = useNavigate();
 
     const Array = [
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: true },
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: false },
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: true },
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: false },
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: false },
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: true },
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: false },
-        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: false },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "approved" },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "pending" },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "approved" },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "pending" },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "denied" },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "approved" },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "denied" },
+        { name: "Raj Traders", img: mix2, items: "4", value: "6,598.00", date: "24 June 2022", status: "denied" },
     ]
 
     const sendData = () => {
         navigate("/history/distributer");
     }
 
-    const showFilter = () =>{
+    const showFilter = () => {
         document.getElementById("cover3").style.display = "block";
         document.getElementById("filter").style.bottom = "0px";
     }
-    const showTime = () =>{
+    const showTime = () => {
         document.getElementById("cover3").style.display = "block";
         document.getElementById("period").style.bottom = "0px";
     }
-    const hideFilter = () =>{
+    const hideFilter = () => {
         document.getElementById("cover3").style.display = "none";
         document.getElementById("filter").style.bottom = "-250px";
         document.getElementById("period").style.bottom = "-250px";
@@ -70,8 +70,9 @@ const History = () => {
                                         <div> {val.name} </div>
                                         <span> {val.items} Items</span>
 
-                                        {val.status ? <section id="s1"> Approved </section> :
-                                            <section id="s2"> Denied </section>}
+                                        {val.status === "approved" ? <section id="s1"> Approved </section> : null}
+                                        {val.status === "denied" ? <section id="s2"> Denied </section> : null}
+                                        {val.status === "pending" ? <section id="s3"> Pending </section> : null}
 
                                     </div>
                                     <div className='price'>
