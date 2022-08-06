@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/invoicify/static/css/main.0f1f26c3.css",
+    "main.js": "/invoicify/static/js/main.f4a9a250.js",
+    "static/media/owen.png": "/invoicify/static/media/owen.a9361088a32249b94b4e.png",
+    "static/media/smart.png": "/invoicify/static/media/smart.d83f78c56facf75012cc.png",
+    "static/media/mix2.png": "/invoicify/static/media/mix2.fd2097535001a91ea201.png",
+    "static/media/owner.png": "/invoicify/static/media/owner.42c8be477003397f7690.png",
+    "static/media/salepro1.png": "/invoicify/static/media/salepro1.784406182c80d7664d2f.png",
+    "static/media/time.png": "/invoicify/static/media/time.345071f6a3085068cde3.png",
+    "static/media/check1.gif": "/invoicify/static/media/check1.e162c84f43eb107bb00e.gif",
+    "static/media/demo.jpg": "/invoicify/static/media/demo.4b55358ed946c3778b40.jpg",
+    "static/media/induction.png": "/invoicify/static/media/induction.e1224d911b18ce6a81a1.png",
+    "index.html": "/invoicify/index.html",
+    "main.0f1f26c3.css.map": "/invoicify/static/css/main.0f1f26c3.css.map",
+    "main.f4a9a250.js.map": "/invoicify/static/js/main.f4a9a250.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f1f26c3.css",
+    "static/js/main.f4a9a250.js"
+  ]
+}
