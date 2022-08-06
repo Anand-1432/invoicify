@@ -2,8 +2,6 @@ import React from 'react'
 import './orderBoxes.scss'
 
 import mix2 from '../../assets/mix2.png'
-import AddIcon from '@material-ui/icons/Add';
-import RemoveIcon from '@material-ui/icons/Remove';
 
 
 const orderBoxes = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AddCustomer from "./pages/addCustomer/AddCustomer";
-import Add from "./pages/add_invoice/Add";
+// import Add from "./pages/add_invoice/Add";
 import Warranty from "./pages/add_invoice/add_warranty/Warranty";
 import BestOffer from "./pages/BestOffer/BestOffer";
 import Cart from "./pages/cart/Cart";

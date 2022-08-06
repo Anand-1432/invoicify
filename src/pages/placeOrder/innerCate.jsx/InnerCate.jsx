@@ -4,7 +4,6 @@ import './innerCate.scss'
 import vector from '../../../assets/vector1.png'
 import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 import SearchIcon from '@material-ui/icons/Search';
-import brand1 from '../../../assets/brand1.png'
 import CateData from '../../../components/cateData/CateData';
 import { useLocation, Link } from 'react-router-dom';
 import Navbar2 from '../../../components/navbar2/Navbar2';
