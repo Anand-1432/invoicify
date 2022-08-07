@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './scan.scss'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { QrReader } from 'react-qr-reader';
 import img from "../../assets/scanner2.png"
 
 const Scan = () => {
 
-    const [data, setData] = useState("");
+    const navigate = useNavigate();
 
     const videoStyle = {
         width: '350px',
@@ -25,7 +25,7 @@ const Scan = () => {
 
             if (result) {
                 console.log(result.text);
-                setData(result.text);
+                navigate("/invoice");
             }
 
         } catch (error) {
@@ -56,7 +56,6 @@ const Scan = () => {
                         <img className='scanImg' src={img} alt="" />
                     </div>
                     <p className='instruction'>Align QR inside square</p>
-                    <p className='result'>{data}</p>
                     <Link to='/add_details_manually' className='btn manually'>Enter Details Manually</Link>
 
                 </div>

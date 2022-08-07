@@ -10,6 +10,7 @@ import SaleCard from '../../components/saleCard/SaleCard';
 
 import owen from '../../assets/owen.png'
 import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 const Sales = () => {
 
@@ -130,6 +131,17 @@ const Sales = () => {
 
   }
 
+  const showFilter = () => {
+    document.getElementById("cover3").style.display = "block";
+    document.getElementById("filter").style.bottom = "0px";
+  }
+
+  const hideFilter = () => {
+    document.getElementById("cover3").style.display = "none";
+    document.getElementById("filter").style.bottom = "-250px";
+  }
+
+
   return (
     <>
       <div className='main'>
@@ -146,9 +158,7 @@ const Sales = () => {
           <hr />
           <div className='filter'>
             <span><ArrowDropDownIcon fontSize='large' /></span>
-            <select name="" id="">
-              <option value=""> Select Filter</option>
-            </select>
+            <div onClick={showFilter}>Sort</div>
           </div>
           <hr id='hr' />
 
@@ -182,6 +192,18 @@ const Sales = () => {
           <div className='footCon'>
             <Footer />
           </div>
+
+
+          <div id='cover3' onClick={hideFilter}></div>
+
+          <div id='filter'>
+            <Button variant='outlined' className='bt' onClick={hideFilter}> Most Recent </Button>
+            <Button variant='outlined' className='bt' onClick={hideFilter}> Price </Button>
+            <Button variant='outlined' className='bt' onClick={hideFilter}> Brand Name A-Z </Button>
+            <Button variant='outlined' className='bt' onClick={hideFilter}> Category Type A-Z </Button>
+          </div>
+
+
 
         </div>
       </div>

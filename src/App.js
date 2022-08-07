@@ -10,6 +10,7 @@ import DashBoard from "./pages/dashboard/DashBoard";
 import Ecard from "./pages/e-card/Ecard";
 import Generate from "./pages/generate/Generate";
 import Home from "./pages/home/Home";
+import Invoice from "./pages/invoice/Invoice";
 import Login from "./pages/login/Login";
 import Manually from "./pages/manually/Manually";
 import MyProduct from "./pages/myProduct/MyProduct";
@@ -57,6 +58,7 @@ function App() {
       {/* //////////////////////////////////////////////////////////// */}
 
       <Route path="/scan" element={<Scan/>}/>
+      <Route path="/invoice" element={<Invoice/>}/>
       <Route path="/ecard" element={<Ecard/>}/>
       <Route path="/generate_invoice" element={<Generate/>}/>
       <Route path="/add_customer" element={<AddCustomer/>}/>

@@ -1,11 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../add_invoice/add.scss'
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import AddIcon from '@material-ui/icons/Add';
 
 const Manually = () => {
+
+    const navigate = useNavigate();
+
+    const sendData = () =>{
+        navigate('/invoice');
+    }
+
     return (
         <>
             <div className='main'>
@@ -45,7 +52,7 @@ const Manually = () => {
                         <p>Upload Invoice From Gallery</p>
                     </div>
 
-                    <div className='btnSection'><button className='btn save'>Save</button></div>
+                    <div className='btnSection'><button className='btn save' onClick={sendData}>Save</button></div>
 
                 </div>
             </div>
