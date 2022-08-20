@@ -25,9 +25,6 @@ const Navbar = () => {
                 {/* <div>My Products</div> */}
                 <div><Link to="/my_product" id="link">My Product</Link></div>
                 <hr />
-                {/* <div>Best Offer</div> */}
-                <div><Link to="/best_offer" id='link'>Best Offer</Link></div>
-                <hr />
                 {/* <div><Link to='/add_invoice' id='link'>Add Invoice</Link></div> */}
                 <div><Link to='/add_warranty' id='link'>Add Warranty</Link></div>
                 {/* <hr /> */}

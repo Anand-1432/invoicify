@@ -1,0 +1,188 @@
+.ecard {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+    position: relative;
+    overflow: hidden;
+    max-height: 850px;
+
+    .header {
+        width: 100%;
+        padding-top: 30px;
+        background-color: #0F55A7;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        padding-left: 10px;
+
+        .back {
+            color: white;
+            margin-top: -7px;
+        }
+    }
+
+    .top {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+
+    .change {
+        margin: auto;
+        width: 90%;
+        line-height: 50px;
+        border: 1px solid #C6C6C6;
+        border-radius: 5px;
+        color: #797979;
+        font-weight: 500;
+        position: relative;
+        cursor: pointer;
+
+        img {
+            width: 35px;
+            height: auto;
+            margin-top: -3px;
+            margin-left: 15px;
+        }
+
+        span {
+            padding-left: 15px;
+        }
+
+        div {
+            position: absolute;
+            right: 20px;
+            top: 0px;
+        }
+    }
+
+    .dataBox {
+        width: 100%;
+        height: 44.8vh;
+        margin-top: 15px;
+        overflow-y: scroll;
+        padding-bottom: 20px;
+        max-height: 440px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        label {
+            margin-left: 5%;
+            font-weight: 500;
+            color: #797979;
+            font-size: 12px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 90%;
+            margin: auto;
+            display: block;
+            line-height: 35px;
+            padding-left: 20px;
+            font-size: 15px;
+            color: #474747;
+            font-weight: 500;
+            border: 1px solid #C6C6C6;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgb(245, 248, 252);
+        }
+
+        section,
+        .logo {
+            width: 90%;
+            margin: auto;
+            border: 1px solid #C6C6C6;
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+            font-size: 15px;
+            color: #474747;
+            font-weight: 500;
+        }
+
+        .logo {
+            line-height: 35px;
+            margin-top: 15px;
+            padding-left: 15px;
+
+            span {
+                margin-right: 10px;
+                color: #0F55A7;
+            }
+        }
+    }
+
+    #share {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 50%;
+        min-width: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #0F55A7;
+        color: white;
+        box-shadow: 1px 1px 5px rgb(148, 148, 148);
+    }
+
+    #cover3 {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        display: none;
+        cursor: pointer;
+    }
+
+    #card1 {
+        width: 100%;
+        height: 350px;
+        background-color: white;
+        position: absolute;
+        bottom: -350px;
+        border-radius: 20px 20px 0px 0px;
+        z-index: 10;
+        transition: .4s;
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+
+}
+
+
+///////////////////////////////////////////////////////////////////////
+
+@media (max-width:500px) {
+    .ecard {
+        width: 100%;
+
+        .dataBox {
+            height: 52vh;
+        }
+    }
+}
+
+@media (max-width:380px) {
+    .ecard {
+
+        .dataBox {
+            height: 45vh;
+        }
+    }
+}

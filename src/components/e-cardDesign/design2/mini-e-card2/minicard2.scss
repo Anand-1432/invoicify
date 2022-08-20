@@ -1,0 +1,36 @@
+#newCard2{
+    width: 47%;
+    height: 140px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #CFE5FF;
+    &:hover{
+        background-color: #CFE5FF;
+    }
+
+    .innerCard{
+        width: 90%;
+        margin: auto;
+        height: 100px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 5%;
+        box-shadow: 1px 1px 5px rgb(128, 128, 128, 0.2);
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    section{
+        text-align: center;
+        font-size: 12px;
+        margin-top: 5px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        color: #797979;
+    }
+}

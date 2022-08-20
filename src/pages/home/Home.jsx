@@ -73,12 +73,12 @@ const Home = () => {
 
           </div>
 
-          <div className='market'>Marketplace</div>
+          {/* <div className='market'>Marketplace</div>
           <div className='marketcardContainer'>
             <Marketcard />
             <Marketcard />
             <Marketcard />
-          </div>
+          </div> */}
 
         </div>
       </div>

@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import AddCustomer from "./pages/addCustomer/AddCustomer";
 // import Add from "./pages/add_invoice/Add";
 import Warranty from "./pages/add_invoice/add_warranty/Warranty";
-import BestOffer from "./pages/BestOffer/BestOffer";
 import Cart from "./pages/cart/Cart";
 import Distributer from "./pages/cart/distributer/Distributer";
 import DashBoard from "./pages/dashboard/DashBoard";
@@ -53,7 +52,6 @@ function App() {
       {/* <Route path="/add_invoice" element={<Add/>}/> */}
       <Route path="/add_warranty" element={<Warranty/>}/>
       <Route path="/my_product" element={<MyProduct/>}/>
-      <Route path="/best_offer" element={<BestOffer/>}/>
       <Route path="/service_center" element={<Service/>}/>
       {/* //////////////////////////////////////////////////////////// */}
 

@@ -1,0 +1,12 @@
+.design2 {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}

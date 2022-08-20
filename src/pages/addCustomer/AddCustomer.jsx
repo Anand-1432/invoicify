@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './addcustomer.scss';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import CallIcon from '@material-ui/icons/Call';
@@ -12,6 +12,8 @@ import Footer from '../../components/footer/Footer';
 
 
 const AddCustomer = () => {
+
+    const navigate = useNavigate();
 
     const [login, setlogin] = useState(false);
     ////////////////////////////////////////////////////////////////
@@ -44,6 +46,13 @@ const AddCustomer = () => {
             setInterval(update, 1000);
         }
     }, [state]);
+
+
+    const onSubmit = (e) =>{
+       e.preventDefault();
+       navigate("/scan");
+    }
+
     //////////////////////////////////////////////////////////
 
 
@@ -73,7 +82,7 @@ const AddCustomer = () => {
 
                         {!login ?
                             <button type='submit' id='subBtn' className='btn btn2 btn-primary' onClick={gernerate}>Generate OTP</button>
-                            : <button type='submit' id='subBtn' className='btn btn2 btn-primary'>Submit</button>
+                            : <button type='submit' id='subBtn' className='btn btn2 btn-primary' onClick={onSubmit}>Submit</button>
                         }
 
                     </form>
