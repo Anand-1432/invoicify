@@ -1,17 +1,76 @@
-.cardCon {
+.cardCon1 {
     width: 100%;
     display: inline-block;
-
-    .cardBox {
+    
+    .cardBox1 {
         margin: auto;
         width: 85%;
         height: 200px;
         border-radius: 40px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+        position: relative;
+        font-weight: 500;
 
         img{
             width: 100%;
             height: 100%;
+        }
+
+        .name1{
+            position: absolute;
+            top:30px;
+            left: 30px;
+            font-weight: 600;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: .5px;
+            font-size: 17px;
+        }
+
+        .phone1{
+            position: absolute;
+            top:77px;
+            left: 60px;
+            font-size: 8px;
+            letter-spacing: .4px;     
+        }
+
+        .email1{
+            position: absolute;
+            bottom:67px;
+            left: 60px;
+            font-size: 8px;
+            letter-spacing: .2px;     
+        }
+
+        .address1{
+            position: absolute;
+            bottom:34px;
+            left: 60px;
+            font-size: 8px;
+            letter-spacing: .2px;     
+        }
+
+        .logo1{
+            position: absolute;
+            top:50px;
+            right: 40px;
+        }
+
+        .shop1{
+            position: absolute;
+            bottom: 77px;
+            right: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .des1{
+            position: absolute;
+            top: 125px;
+            right: 17px;
+            font-size: 10px;
+            width: 100px;
+            text-align: center;
         }
 
     }

@@ -13,14 +13,14 @@ import img6 from '../../../assets/cart36.png'
 const Design3 = () => {
   return (
     <>
-        <div className='design3'>
-            <MaxCard3 img={img1}/>
-            <MaxCard3 img={img2}/>
-            <MaxCard3 img={img3}/>
-            <MaxCard3 img={img4}/>
-            <MaxCard3 img={img5}/>
-            <MaxCard3 img={img6}/>
-        </div>
+      <div className='design3'>
+        <MaxCard3 img={img2} color1="red" color2="white" color3="black" />
+        <MaxCard3 img={img1} color1="green" color2="white" color3="#651f1f" />
+        <MaxCard3 img={img3} color1="white" color2="white" color3="white" />
+        <MaxCard3 img={img4} color1="white" color2="white" color3="white" />
+        <MaxCard3 img={img5} color1="yellow" color2="pink" color3="pink" />
+        <MaxCard3 img={img6} color1="pink" color2="white" color3="white" />
+      </div>
     </>
   )
 }

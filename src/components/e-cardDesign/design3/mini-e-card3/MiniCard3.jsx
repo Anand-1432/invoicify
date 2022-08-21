@@ -1,6 +1,6 @@
 import React from 'react'
 import './minicard3.scss'
-import img from '../../../../assets/cart32.png'
+import img from '../../../../assets/p3.png'
 
 const MiniCard = (props) => {
     return (

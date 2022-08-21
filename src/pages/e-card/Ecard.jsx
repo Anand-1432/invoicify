@@ -21,9 +21,9 @@ import { useState } from 'react';
 
 const Ecard = () => {
 
-    const [state1, setState1] = useState(true);
+    const [state1, setState1] = useState(false);
     const [state2, setState2] = useState(false);
-    const [state3, setState3] = useState(false);
+    const [state3, setState3] = useState(true);
 
     const showCard = () => {
         document.getElementById("cover3").style.display = "block";
@@ -81,22 +81,22 @@ const Ecard = () => {
                     <div className='dataBox'>
 
                         <label>Your Name</label>
-                        <input type="text" name="" id="" value="Devraaj Kumar" />
+                        <input type="text" name="" id="" readOnly value="Devraaj Kumar" />
 
                         <label>Business Name</label>
-                        <input type="text" name="" id="" value="A One Electronics" />
+                        <input type="text" name="" id="" readOnly value="A One Electronics" />
 
                         <label>Mobile Number</label>
-                        <input type="text" name="" id="" value="123456789" />
+                        <input type="text" name="" id="" readOnly value="123456789" />
 
                         <label>Secondary Number</label>
-                        <input type="text" name="" id="" value="123456789" />
+                        <input type="text" name="" id="" readOnly value="123456789" />
 
                         <label>Your E-mail</label>
-                        <input type="text" name="" id="" value="testuser@gmail.com" />
+                        <input type="text" name="" id="" readOnly value="testuser@gmail.com" />
 
                         <label>Your Website</label>
-                        <input type="text" name="" id="" value="www.google.com" />
+                        <input type="text" name="" id="" readOnly value="www.google.com" />
 
                         <label>Your Address</label>
                         <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus rerum nulla</section>
