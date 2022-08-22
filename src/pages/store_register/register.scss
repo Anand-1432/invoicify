@@ -1,6 +1,7 @@
 .register {
 
-    width: 400px;
+    max-width: 400px;
+    width: 100vw;
     height: 100vh;
     max-height: 850px;
 
@@ -106,12 +107,5 @@
                 font-size: 12px;
             }
         }
-    }
-}
-
-
-@media (max-width:500px) {
-    .register {
-        width: 100%;
     }
 }
