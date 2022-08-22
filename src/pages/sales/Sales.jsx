@@ -151,7 +151,7 @@ const Sales = () => {
 
           <div className='navBar'>
             <img id='Onbtn' src={vector} alt="..." onClick={openNavbar} />
-            <img id='Offbtn' src={vector} alt="..." />
+            <img id='Offbtn' src={vector} alt="..." onClick={openNavbar}/>
             <Link to="/scan"><img id='pro' src={qr} alt="..." /></Link>
           </div>
 
