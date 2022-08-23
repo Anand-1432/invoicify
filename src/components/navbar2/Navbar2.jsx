@@ -30,7 +30,7 @@ const Navbar2 = () => {
                 <hr />
                 <div><Link to='/' id='link'>Switch To User</Link></div>
                 <hr />
-                <div><Link to='/generate_invoice' id='link'>Generate Invoice</Link></div>
+                <div><Link to='/add_customer' id='link'>Generate Warranty</Link></div>
                 <hr />
                 <div><Link to='/login' id='link'>Logout</Link></div>
 

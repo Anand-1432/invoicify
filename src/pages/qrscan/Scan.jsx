@@ -5,6 +5,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { QrReader } from 'react-qr-reader';
 import img from "../../assets/scanner2.png"
 
+
 const Scan = () => {
 
     const navigate = useNavigate();
@@ -25,7 +26,8 @@ const Scan = () => {
 
             if (result) {
                 console.log(result.text);
-                navigate("/invoice");
+                alert("Product added successfully!");
+                navigate("/dashboard");
             }
 
         } catch (error) {
@@ -56,7 +58,7 @@ const Scan = () => {
                         <img className='scanImg' src={img} alt="" />
                     </div>
                     <p className='instruction'>Align QR inside square</p>
-                    <Link to='/add_details_manually' className='btn manually'>Enter Details Manually</Link>
+                    {/* <Link to='/add_details_manually' className='btn manually'>Enter Details Manually</Link> */}
 
                 </div>
             </div>

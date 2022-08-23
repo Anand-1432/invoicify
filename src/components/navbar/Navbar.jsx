@@ -22,9 +22,6 @@ const Navbar = () => {
                 <p>Evam M</p>
                 <div><Link to="/user_profile" id='link'>My Profile</Link></div>
                 <hr />
-                {/* <div>My Products</div> */}
-                <div><Link to="/my_product" id="link">My Product</Link></div>
-                <hr />
                 {/* <div><Link to='/add_invoice' id='link'>Add Invoice</Link></div> */}
                 <div><Link to='/add_warranty' id='link'>Add Warranty</Link></div>
                 {/* <hr /> */}

@@ -9,10 +9,8 @@ import DashBoard from "./pages/dashboard/DashBoard";
 import Ecard from "./pages/e-card/Ecard";
 import Generate from "./pages/generate/Generate";
 import Home from "./pages/home/Home";
-import Invoice from "./pages/invoice/Invoice";
 import Login from "./pages/login/Login";
 import Manually from "./pages/manually/Manually";
-import MyProduct from "./pages/myProduct/MyProduct";
 import DistributerHistory from "./pages/orderHistory/distributerHistory/DistributerHistory";
 import History from "./pages/orderHistory/History";
 import Category from "./pages/placeOrder/category/Category";
@@ -51,14 +49,12 @@ function App() {
       <Route path="/product/:id" element={<Product/>}/>
       {/* <Route path="/add_invoice" element={<Add/>}/> */}
       <Route path="/add_warranty" element={<Warranty/>}/>
-      <Route path="/my_product" element={<MyProduct/>}/>
       <Route path="/service_center" element={<Service/>}/>
       {/* //////////////////////////////////////////////////////////// */}
 
       <Route path="/scan" element={<Scan/>}/>
-      <Route path="/invoice" element={<Invoice/>}/>
       <Route path="/ecard" element={<Ecard/>}/>
-      <Route path="/generate_invoice" element={<Generate/>}/>
+      <Route path="/generate_warranty" element={<Generate/>}/>
       <Route path="/add_customer" element={<AddCustomer/>}/>
       <Route path="/dashBoard" element={<DashBoard/>}/>
       <Route path="/sales" element={<Sales/>}/>

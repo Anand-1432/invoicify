@@ -1,5 +1,6 @@
 .productPage1{
-    width: 400px;
+    max-width: 400px;
+    width: 100vw;
     height: 100vh;
     background-color: rgb(245, 248, 252);
     position: relative;
@@ -91,13 +92,13 @@
 
     .content{
         width: 85%;
-        padding: 0px 15px 0px 15px;
+        padding: 0px 0px 0px 0px;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
 
         .data{
-            margin-left: -12px;
+
             p{
                 margin-top: 20px;
                 font-weight: 500;
@@ -118,8 +119,7 @@
                 font-size: 14px;
                 margin-top: 20px;
                 background-color: #0F55A7;
-                padding: 7px 20px 7px 20px;
-                width: 160px;
+                width: 95%;
                 box-shadow: 1px 1px 20px rgb(166, 166, 255);
             }
         }
@@ -127,7 +127,6 @@
         .data2{
             text-align: end;
             p{
-                margin-right: -23px;
                 margin-top: 20px;
                 font-weight: 500;
                 font-size: 17px;
@@ -135,18 +134,15 @@
             }
             section{
                 margin-top: -12px;
-                margin-right: -23px;
                 font-size: 14px;
                 color: #b8b8b8;
             }
             .btn{
                 font-size: 14px;
-                margin-right: -23px;
                 color: white;
-                margin-top: 55px;
+                margin-top: 54px;
                 background-color: #0F55A7;
-                padding: 7px 20px 7px 20px;
-                width: 160px;
+                width: 95%;
                 box-shadow: 1px 1px 20px rgb(166, 166, 255);
             }
         }
@@ -161,11 +157,5 @@
         width: 100%;
         height: auto;
         background-color:  rgb(245, 248, 252);
-    }
-}
-
-@media (max-width:500px) {
-    .productPage {
-        width: 100%;
     }
 }
