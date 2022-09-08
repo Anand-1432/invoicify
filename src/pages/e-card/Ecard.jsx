@@ -22,8 +22,8 @@ import { useState } from 'react';
 const Ecard = () => {
 
     const [state1, setState1] = useState(false);
-    const [state2, setState2] = useState(false);
-    const [state3, setState3] = useState(true);
+    const [state2, setState2] = useState(true);
+    const [state3, setState3] = useState(false);
 
     const showCard = () => {
         document.getElementById("cover3").style.display = "block";
@@ -54,6 +54,21 @@ const Ecard = () => {
         hideCard();
     }
 
+    const [data, setData] = useState({
+        name: "Devraaj Kumar",
+        business: "A One Electronics",
+        mobile1: "1234567890",
+        mobile2: "1234567890",
+        email: "testuser@gmail.com",
+        web: "www.google.com",
+        address: "A one electronics, gol bazar jabalpur, Madhya Pradesh 455001",
+        logo: ""
+    });
+
+    const handleChange = (e) => {
+        setData({ ...data, [e.target.name]: e.target.value });
+    }
+
 
     return (
         <>
@@ -67,9 +82,9 @@ const Ecard = () => {
 
                     {/* ////////////////////////////////////////////////////////// */}
 
-                    {state1 ? <Design1 /> : null}
-                    {state2 ? <Design2 /> : null}
-                    {state3 ? <Design3 /> : null}
+                    {state1 ? <Design1 data={data} /> : null}
+                    {state2 ? <Design2 data={data}/> : null}
+                    {state3 ? <Design3 data={data}/> : null}
 
                     {/* ////////////////////////////////////////////////////////// */}
 
@@ -81,25 +96,27 @@ const Ecard = () => {
                     <div className='dataBox'>
 
                         <label>Your Name</label>
-                        <input type="text" name="" id="" readOnly value="Devraaj Kumar" />
+                        <input type="text" name="name" value={data.name} onChange={handleChange} />
 
                         <label>Business Name</label>
-                        <input type="text" name="" id="" readOnly value="A One Electronics" />
+                        <input type="text" name="business" value={data.business} onChange={handleChange} />
 
                         <label>Mobile Number</label>
-                        <input type="text" name="" id="" readOnly value="123456789" />
+                        <input type="tel" maxLength={10} name="mobile1" value={data.mobile1} onChange={handleChange} />
 
                         <label>Secondary Number</label>
-                        <input type="text" name="" id="" readOnly value="123456789" />
+                        <input type="tel" maxLength={10} name="mobile2" value={data.mobile2} onChange={handleChange} />
 
                         <label>Your E-mail</label>
-                        <input type="text" name="" id="" readOnly value="testuser@gmail.com" />
+                        <input type="text" name="email" value={data.email} onChange={handleChange} />
 
                         <label>Your Website</label>
-                        <input type="text" name="" id="" readOnly value="www.google.com" />
+                        <input type="text" name="web" value={data.web} onChange={handleChange} />
 
                         <label>Your Address</label>
-                        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus rerum nulla</section>
+                        <section>
+                            <textarea name='address' value={data.address} onChange={handleChange}></textarea>
+                        </section>
 
                         <div className='logo'> <span><PhotoLibraryIcon /></span> Upload Your Logo</div>
 
@@ -113,7 +130,7 @@ const Ecard = () => {
 
                         <MiniCard1 fun={fun1} state={state1} />
                         <MiniCard2 fun={fun2} state={state2} />
-                        <MiniCard3 fun={fun3} state={state3}/>
+                        <MiniCard3 fun={fun3} state={state3} />
 
                     </div>
 

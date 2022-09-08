@@ -1,18 +1,19 @@
-.myprofile{
+.myprofile {
     width: 100vw;
-    max-width: 420px;
+    max-width: 400px;
     height: 100vh;
     background-color: rgb(245, 248, 252);
 
     .header {
         width: 100%;
-        padding-top: 35px;
+        padding-top: 30px;
         background-color: #0F55A7;
+        padding-bottom: 10px;
         font-size: 20px;
         font-weight: 400;
         color: white;
-        padding-left: 20px;
-        margin-bottom: 30px;
+        padding-left: 10px;
+        margin-bottom: 20px;
 
         .back {
             color: white;
@@ -20,22 +21,122 @@
         }
     }
 
-    .centre{
-        width: 80%;
+    .imgSection {
+        width: 200px;
+        height: 190px;
         margin: auto;
-        margin-top: 20vh;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 30px;
+        position: relative;
 
-        img{
-            width: 100%;
-            height: auto;
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
         }
 
-        div{
-            font-size: 25px;
-            margin-top: 10px;
-            text-align: center;
+        section {
+            margin-top: 20px;
+            color: #474747;
             font-weight: 600;
-            color: #0F55A7;
+            font-size: 20px;
+            letter-spacing: .5px;
+        }
+
+        #image {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            bottom: 45px;
+            right: 35px;
+            
+            #btt {
+                width: 35px;
+                min-width: 20px;
+                height: 35px;
+                min-width: 20px;
+                border-radius: 50%;
+                background-color: #0F55A7;
+                color: white;
+            }
+            #inp{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 2;
+                border-radius: 50%;
+                opacity: 0;
+            }
+        }
+
+        #edit {
+            position: absolute;
+            min-width: 20px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #0F55A7;
+            top: 0px;
+            right: -60px;
+            color: white;
         }
     }
+
+
+    .spBox {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        padding: 10px 0px 10px 0px;
+
+        .sp1 {
+            display: grid;
+            place-content: center;
+            color: #474747;
+        }
+
+        .sp2 {
+            border-bottom: 1px solid #C6C6C6;
+            width: 95%;
+            padding-bottom: 5px;
+
+            section {
+                font-size: 12px;
+                color: #797979;
+            }
+
+            div {
+                font-weight: 500;
+                color: #474747;
+            }
+
+            input {
+                background-color: rgb(245, 248, 252);
+                border: none;
+                font-weight: 500;
+                color: #474747;
+                outline: none;
+            }
+        }
+    }
+
+    .save {
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 400px;
+
+        .bt {
+            text-transform: none;
+            background-color: #0F55A7;
+            color: white;
+            font-weight: 500;
+            width: 100%;
+            margin-left: 6px;
+        }
+    }
+
 }

@@ -2,25 +2,28 @@ import React from 'react'
 import './group.scss'
 import { useNavigate } from 'react-router-dom'
 
-const Group = () => {
+const Group = (props) => {
 
     const navigate = useNavigate();
 
-    const sendData = () =>{
-       navigate("/cart/distributer");
+    const sendData = () => {
+        navigate(`/cart/distributer/${props.data.distributerName}`, { state: { data: props.data } });
     }
 
     return (
         <>
             <div className='groupPage' onClick={sendData}>
-                <div className='name'>Raj Traders</div>
-                <p>Shop No 23, 4th Block, Barkhera <br />
-                    Bhopal MP <br />
-                    +91 - 754 924 2346
+                <div className='name'> {props.data.distributerName} </div>
+                <p>
+                    {props.data.adrress}
+                    <br />
+                    {props.data.city}
+                    <br />
+                    {props.data.mobile}
                 </p>
-                <section>4 Items</section>
+                <section> {props.data.quantity} Items</section>
                 <div className='value'>Total Value</div>
-                <div className='amt'>6,598.00/-</div>
+                <div className='amt'> {props.data.total}/-</div>
             </div>
         </>
     )

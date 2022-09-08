@@ -9,16 +9,16 @@ import img4 from '../../../assets/cart14.png'
 import img5 from '../../../assets/cart15.png'
 import img6 from '../../../assets/cart16.png'
 
-const Design1 = () => {
+const Design1 = (props) => {
   return (
     <>
       <div className='design1'>
-        <MaxCard1 img={img1} color1="#732424" color2="#732424" />
-        <MaxCard1 img={img2} color1="black" color2="white" />
-        <MaxCard1 img={img3} color1="white" color2="white" />
-        <MaxCard1 img={img4} color1="black" color2="black" />
-        <MaxCard1 img={img5} color1="white" color2="#732424" />
-        <MaxCard1 img={img6} color1="black" color2="black" />
+        <MaxCard1 data={props.data} img={img1} color1="#732424" color2="#732424" />
+        <MaxCard1 data={props.data} img={img2} color1="black" color2="white" />
+        <MaxCard1 data={props.data} img={img3} color1="white" color2="white" />
+        <MaxCard1 data={props.data} img={img4} color1="black" color2="black" />
+        <MaxCard1 data={props.data} img={img5} color1="white" color2="#732424" />
+        <MaxCard1 data={props.data} img={img6} color1="black" color2="black" />
       </div>
     </>
   )

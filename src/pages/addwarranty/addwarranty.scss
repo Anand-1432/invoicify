@@ -1,0 +1,185 @@
+.addWarranty {
+    width: 100vw;
+    max-width: 400px;
+    height: 100vh;
+    background-color: rgb(245, 248, 252);
+
+    .header {
+        width: 100%;
+        padding-top: 30px;
+        background-color: #0F55A7;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        padding-left: 10px;
+
+        .back {
+            color: white;
+            margin-top: -7px;
+        }
+    }
+
+    .topBoxCon {
+        width: 100%;
+        height: 160px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .b1,
+        .b2 {
+            width: 130px;
+            height: 122px;
+            border: 1px solid #C6C6C6;
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: 0px;
+            display: grid;
+            position: relative;
+
+            #butt {
+                margin: auto;
+                min-width: 20px;
+                width: 30px;
+                height: 30px;
+                color: white;
+                background-color: #0F55A7;
+            }
+
+            div {
+                width: 100%;
+                position: absolute;
+                top: 85px;
+                text-align: center;
+                font-size: 12px;
+                letter-spacing: .2px;
+                color: #C6C6C6;
+                line-height: 13px;
+            }
+
+            input {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 45px;
+                left: 49px;
+                opacity: 0;
+            }
+        }
+
+        .b1 {
+            margin-right: 20px;
+        }
+
+        .b2 {
+            margin-left: 20px;
+        }
+    }
+
+    form {
+        width: 85%;
+        margin: auto;
+        margin-top: 25px;
+        color: #797979;
+
+        .form-group {
+            margin-top: 10px;
+            font-size: 14px;
+            position: relative;
+
+            select {
+                display: block;
+                width: 100%;
+                height: 40px;
+                margin-top: 2px;
+                border-radius: 5px;
+                background-color: #f5f8fc;
+                padding-left: 45px;
+                color: #C6C6C6;
+                border-color: #C6C6C6;
+            }
+
+            span {
+                position: absolute;
+                bottom: 2px;
+                left: 10px;
+            }
+
+            section {
+                width: 20px;
+                height: 30px;
+                background-color: #f5f8fc;
+                position: absolute;
+                right: 2px;
+                bottom: 5px
+            }
+        }
+
+        .date {
+            font-size: 15px;
+
+            label {
+                margin-top: 10px;
+            }
+
+            .dateBox {
+                margin-top: -10px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                span {
+                    left: 0px;
+                }
+
+                select {
+                    text-align: center;
+                    padding-left: 15px;
+                }
+
+                .set1 {
+                    select {
+                        width: 90%;
+                    }
+
+                    section {
+                        right: 13px;
+                    }
+                }
+
+                .set2 {
+                    select {
+                        width: 90%;
+                        margin-left: 10%;
+                    }
+
+                    span {
+                        left: 10px;
+                    }
+                }
+            }
+        }
+
+        #b {
+            width: 100%;
+            margin-top: 40px;
+            background-color: #0F55A7;
+            color: white;
+            text-transform: none;
+        }
+
+    }
+}
+
+@media (max-width:500px) {
+    .addWarranty {
+        background-color: white;
+
+        form {
+            .form-group {
+                select, section {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

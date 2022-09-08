@@ -24,6 +24,11 @@
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             letter-spacing: .5px;
             font-size: 17px;
+            line-height: 18px;
+            width: 45%;
+            white-space: normal;
+            height: 37px;
+            overflow: hidden;
         }
 
         .phone1{
@@ -39,15 +44,19 @@
             bottom:67px;
             left: 60px;
             font-size: 8px;
-            letter-spacing: .2px;     
+            letter-spacing: .2px;  
+            width: 37%;
+            overflow: hidden;  
         }
 
         .address1{
             position: absolute;
-            bottom:34px;
+            top:144px;
             left: 60px;
             font-size: 8px;
-            letter-spacing: .2px;     
+            letter-spacing: .2px;
+            width: 35%;   
+            white-space: normal;
         }
 
         .logo1{
@@ -58,21 +67,20 @@
 
         .shop1{
             position: absolute;
-            bottom: 77px;
+            top: 100px;
             right: 15px;
             font-size: 12px;
             font-weight: 600;
             font-family: Arial, Helvetica, sans-serif;
-        }
-        .des1{
-            position: absolute;
-            top: 125px;
-            right: 17px;
-            font-size: 10px;
-            width: 100px;
             text-align: center;
-        }
+            width: 31%;
+            white-space: normal;
 
+            span{
+                font-size: 10px;
+                text-align: center;
+            }
+        }
     }
 }
 

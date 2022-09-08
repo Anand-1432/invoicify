@@ -2,12 +2,13 @@ import React from 'react'
 import './home.scss'
 import SearchIcon from '@material-ui/icons/Search';
 import Productcard from '../../components/productcard/Productcard';
-import Marketcard from '../../components/marketcard/Marketcard';
+// import Marketcard from '../../components/marketcard/Marketcard';
 
 import vector from '../../assets/Vector.png'
-import profile from '../../assets/profile.jpg'
+import profile from '../../assets/profile.png'
 import owen from '../../assets/owen.png'
 import Navbar from '../../components/navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -40,7 +41,7 @@ const Home = () => {
           <div className='navBar'>
             <img id='btnOn' src={vector} alt="..." onClick={openNavbar} />
             <img id='btnOff' src={vector} alt="..." />
-            <img id='pro' src={profile} alt="..." />
+           <Link to="/user_profile"><img id='pro' src={profile} alt="..." /></Link>
           </div>
 
           <p className='title'>Welcome Evan</p>

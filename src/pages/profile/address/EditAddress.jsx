@@ -7,10 +7,10 @@ import { Button } from '@material-ui/core';
 const EditAddress = () => {
     const navigate = useNavigate();
 
-    const sendBack = () => {
-        navigate("/profile/address");
-    }
-
+    const verifyData = () =>{
+        navigate("/verify_details", {state:{status:true}});
+     }
+     
     return (
         <>
             <div className='main'>
@@ -52,7 +52,7 @@ const EditAddress = () => {
                             <input type="text" class="form-control" placeholder="Enter Contact Number" value="123 456 7890"/>
                         </div>
 
-                        <Button variant='contained' id="bat" onClick={sendBack}>Save Changes</Button>
+                        <Button variant='contained' id="bat" onClick={verifyData}>Save Changes</Button>
 
                     </form>
 

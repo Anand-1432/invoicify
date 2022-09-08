@@ -15,21 +15,19 @@ const MaxCard = (props) => {
 
                     <div className='logo3' style={{ color: props.color1 }}><DirectionsBikeIcon style={{ fontSize: "50px" }} /></div>
 
-                    <div className='shop3' style={{ color: props.color2 }}>A One <br /> Electronics</div>
+                    <div className='shop3' style={{ color: props.color2 }}> {props.data.business} </div>
 
                     <div style={{ color: props.color3 }}>
-                        <div className='name3'>Devraaj Kumar</div>
+                        <div className='name3'> {props.data.name} </div>
 
-                        <div className='phone3'>1234567890 | 1234567890</div>
+                        <div className='phone3'> {props.data.mobile2} | {props.data.mobile1}</div>
 
-                        <div className='email3'>hellogallery@gmail.com</div>
+                        <div className='email3'> {props.data.email} </div>
 
-                        <div className='web'>www.google.com</div>
+                        <div className='web'> {props.data.web} </div>
 
                         <div className='address3'>
-                            A one electronics, gol bazar <br />
-                            jabalpur, Madhya Pradesh <br />
-                            455001
+                            {props.data.address}
                         </div>
                     </div>
 

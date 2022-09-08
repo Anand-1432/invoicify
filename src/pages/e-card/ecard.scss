@@ -111,6 +111,22 @@
             color: #474747;
             font-weight: 500;
         }
+        
+        section {
+            padding: 1px 5px 1px 10px;
+            height: 54px;
+            
+            textarea {
+                font-size: 15px;
+                color: #474747;
+                font-weight: 500;
+                width: 100%;
+                background-color: rgb(245, 248, 252);
+                border: none;
+                outline: none;
+            }
+        }
+
 
         .logo {
             line-height: 35px;

@@ -1,8 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AddCustomer from "./pages/addCustomer/AddCustomer";
-// import Add from "./pages/add_invoice/Add";
-import Warranty from "./pages/add_invoice/add_warranty/Warranty";
 import Cart from "./pages/cart/Cart";
 import Distributer from "./pages/cart/distributer/Distributer";
 import DashBoard from "./pages/dashboard/DashBoard";
@@ -10,7 +8,6 @@ import Ecard from "./pages/e-card/Ecard";
 import Generate from "./pages/generate/Generate";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import Manually from "./pages/manually/Manually";
 import DistributerHistory from "./pages/orderHistory/distributerHistory/DistributerHistory";
 import History from "./pages/orderHistory/History";
 import Category from "./pages/placeOrder/category/Category";
@@ -26,7 +23,6 @@ import Bank from "./pages/profile/bank/Bank";
 import Editbank from "./pages/profile/bank/Editbank";
 import EditProfile from "./pages/profile/editprofile/EditProfile";
 import Profile from "./pages/profile/Profile";
-import Scan from "./pages/qrscan/Scan";
 import SaleData from "./pages/saleData/SaleData";
 import Sales from "./pages/sales/Sales";
 import Service from "./pages/service/Service";
@@ -34,6 +30,13 @@ import Register from "./pages/store_register/Register";
 import MyProfile from "./pages/userProfile/MyProfile";
 import UserDetails from "./pages/user_details/UserDetails";
 import UserType from "./pages/user_type/UserType";
+
+import Scanner from "./pages/scanner/Scanner";
+import Support from "./pages/support/Support";
+import Verify from "./pages/verfication/Verify";
+import Verify1 from "./pages/verfication/Verify1";
+import Confirm from "./pages/confirmation/Confirm";
+import Addwarranty from "./pages/addwarranty/Addwarranty";
 
 function App() {
   return (
@@ -47,12 +50,16 @@ function App() {
       <Route path="/user_profile" element={<MyProfile/>}/>
       <Route path="/" element={<Home/>}/>
       <Route path="/product/:id" element={<Product/>}/>
-      {/* <Route path="/add_invoice" element={<Add/>}/> */}
-      <Route path="/add_warranty" element={<Warranty/>}/>
+      <Route path="/add_warranty" element={<Addwarranty/>}/>
       <Route path="/service_center" element={<Service/>}/>
+      <Route path="/support" element={<Support/>}/>
+      <Route path="/verify" element={<Verify/>}/>
+      <Route path="/verify_details" element={<Verify1/>}/>
       {/* //////////////////////////////////////////////////////////// */}
 
-      <Route path="/scan" element={<Scan/>}/>
+      <Route path="/scan" element={<Scanner/>}/>
+      <Route path="/confirmation" element={<Confirm/>}/>
+
       <Route path="/ecard" element={<Ecard/>}/>
       <Route path="/generate_warranty" element={<Generate/>}/>
       <Route path="/add_customer" element={<AddCustomer/>}/>
@@ -60,17 +67,16 @@ function App() {
       <Route path="/sales" element={<Sales/>}/>
       <Route path="/sales/product_data" element={<SaleData/>}/>
       <Route path="/store_register" element={<Register/>}/>
-      <Route path="/add_details_manually" element={<Manually/>}/>
       <Route path="/order" element={<Order/>}/>
       <Route path="/order/brand" element={<Category/>}/>
       <Route path="/order/brand/category" element={<InnerCate/>}/>
       <Route path="/order/brand/category/product" element={<ProductPage/>}/>
       
       <Route path="/cart" element={<Cart/>}/>
-      <Route path="/cart/distributer" element={<Distributer/>}/>
+      <Route path="/cart/distributer/:name" element={<Distributer/>}/>
 
       <Route path="/history" element={<History/>}/>
-      <Route path="/history/distributer" element={<DistributerHistory/>}/>
+      <Route path="/history/distributer/" element={<DistributerHistory/>}/>
 
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/profile/editprofile" element={<EditProfile/>}/>

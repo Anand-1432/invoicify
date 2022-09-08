@@ -1,0 +1,88 @@
+.verifyPage {
+    width: 100vw;
+    height: 100vh;
+    max-width: 400px;
+    background-color: rgb(245, 248, 252);
+
+    .header {
+        width: 100%;
+        padding-top: 30px;
+        background-color: #0F55A7;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        padding-left: 10px;
+        margin-bottom: 50px;
+
+        .back {
+            color: white;
+            margin-top: -7px;
+        }
+    }
+
+    h4 {
+        color: #0F55A7;
+        font-weight: 600;
+        padding-left: 7.5%;
+    }
+
+    form {
+        color: #797979;
+        width: 85%;
+        margin: auto;
+
+        .form-group {
+            position: relative;
+
+            label {
+                font-size: 12px;
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+
+            input {
+                line-height: 25px;
+                font-size: 14px;
+                padding-right: 110px;
+
+                &::placeholder {
+                    color: #C6C6C6;
+                }
+            }
+
+            .s1, .s2{
+                position: absolute;
+                bottom: 8px;
+                right: 20px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #0F55A7;
+                cursor: pointer;
+            }
+            .s2{
+                color: #6B8BAF;
+            }
+        }
+        .msg{
+            text-align: right;
+            font-size: 12px;
+            color: #0F55A7;
+            margin-top: 5px;
+        }
+
+        .bt, .bt1 {
+            width: 100%;
+            background-color: #0F55A7;
+            color: white;
+            text-transform: none;
+            margin-top: 30px;
+        }
+        .bt1{
+            background-color: #6B8BAF;
+        }
+
+    }
+
+
+}

@@ -14,7 +14,7 @@ const SaleData = () => {
 
 
     const goBack = () =>{
-        navigate(-1);
+        navigate("/sales");
     }
     
     return (

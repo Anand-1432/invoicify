@@ -8,9 +8,9 @@ const Addbank = () => {
 
     const navigate = useNavigate();
 
-    const sendBack = () =>{
-       navigate("/profile/bank");
-    }
+    const verifyData = () =>{
+        navigate("/verify_details", {state:{status:true}});
+     }
 
     return (
         <>
@@ -37,7 +37,7 @@ const Addbank = () => {
                             <input type="text" class="form-control" placeholder="Enter IFSC Code" />
                         </div>
 
-                        <Button variant='contained' id="bat" onClick={sendBack}>save</Button>
+                        <Button variant='contained' id="bat" onClick={verifyData}>save</Button>
 
                     </form>
                 </div>

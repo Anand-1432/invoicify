@@ -31,6 +31,10 @@
             top: 75px;
             text-align: center;
             letter-spacing: 1px;
+            white-space: normal;
+            height: 52px; 
+            overflow: hidden;
+
         }
 
         .name3 {
@@ -39,6 +43,12 @@
             right: 20px;
             font-size: 18px;
             letter-spacing: .5px;
+            width: 43%;
+            white-space: normal;
+            text-align: right;
+            line-height: 20px;
+            height: 42px;
+            overflow: hidden;
         }
 
         .phone3 {
@@ -67,11 +77,15 @@
 
         .address3 {
             position: absolute;
-            top: 146px;
+            top: 147px;
             right: 40px;
             font-size: 10px;
             letter-spacing: .2px;
             text-align: right;
+            white-space: normal;
+            height: 45px;
+            overflow: hidden;
+            width: 38%;
         }
 
 

@@ -7,8 +7,8 @@ const AddAddress = () => {
 
     const navigate = useNavigate();
 
-    const sendBack = () =>{
-       navigate("/profile/address");
+    const verifyData = () =>{
+       navigate("/verify_details", {state:{status:true}});
     }
 
     return (
@@ -52,7 +52,7 @@ const AddAddress = () => {
                             <input type="text" class="form-control" placeholder="Enter Contact Number"/>
                         </div>
 
-                        <Button variant='contained' id="bat" onClick={sendBack}>save</Button>
+                        <Button variant='contained' id="bat" onClick={verifyData}>save</Button>
 
                     </form>
 

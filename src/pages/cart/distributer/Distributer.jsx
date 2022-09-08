@@ -1,6 +1,6 @@
 import React from 'react'
 import './distributer.scss'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import Ungroup from '../../../components/group/Ungroup';
 import { Button } from '@material-ui/core'
@@ -9,50 +9,54 @@ import { Button } from '@material-ui/core'
 const Distributer = () => {
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const data = location.state.data;
+  console.log(data);
 
   const goBack = () => {
     navigate(-1);
   }
 
 
-  const Ungrouped = [
-    {
-      productName: "Lorem ipsum dolor sit amet, consectetur",
-      content: "4 Jars (1500 ml, 1500 ml, 1000 ml, 450 ml)",
-      color: "Black & Yellow",
-      size: "Medium",
-      power: "1500W",
-      offerName: "Festive Offer",
-      offerPercent: "5",
-      price: "3,299.00",
-      oldPrice: "3,599.00",
-      quantity: 2,
-    },
-    {
-      productName: "Lorem ipsum dolor sit amet, consectetur",
-      content: "4 Jars (1500 ml, 1500 ml, 1000 ml, 450 ml)",
-      color: "Black & Yellow",
-      size: "Medium",
-      power: "1500W",
-      offerName: "Festive Offer",
-      offerPercent: "5",
-      price: "3,299.00",
-      oldPrice: "3,599.00",
-      quantity: 2,
-    },
-    {
-      productName: "Lorem ipsum dolor sit amet, consectetur",
-      content: "4 Jars (1500 ml, 1500 ml, 1000 ml, 450 ml)",
-      color: "Black & Yellow",
-      size: "Medium",
-      power: "1500W",
-      offerName: "Festive Offer",
-      offerPercent: "5",
-      price: "3,299.00",
-      oldPrice: "3,599.00",
-      quantity: 2,
-    },
-  ]
+  // const Ungrouped = [
+  //   {
+  //     productName: "Lorem ipsum dolor sit amet, consectetur",
+  //     content: "4 Jars (1500 ml, 1500 ml, 1000 ml, 450 ml)",
+  //     color: "Black & Yellow",
+  //     size: "Medium",
+  //     power: "1500W",
+  //     offerName: "Festive Offer",
+  //     offerPercent: "5",
+  //     price: "3,299.00",
+  //     oldPrice: "3,599.00",
+  //     quantity: 2,
+  //   },
+  //   {
+  //     productName: "Lorem ipsum dolor sit amet, consectetur",
+  //     content: "4 Jars (1500 ml, 1500 ml, 1000 ml, 450 ml)",
+  //     color: "Black & Yellow",
+  //     size: "Medium",
+  //     power: "1500W",
+  //     offerName: "Festive Offer",
+  //     offerPercent: "5",
+  //     price: "3,299.00",
+  //     oldPrice: "3,599.00",
+  //     quantity: 2,
+  //   },
+  //   {
+  //     productName: "Lorem ipsum dolor sit amet, consectetur",
+  //     content: "4 Jars (1500 ml, 1500 ml, 1000 ml, 450 ml)",
+  //     color: "Black & Yellow",
+  //     size: "Medium",
+  //     power: "1500W",
+  //     offerName: "Festive Offer",
+  //     offerPercent: "5",
+  //     price: "3,299.00",
+  //     oldPrice: "3,599.00",
+  //     quantity: 2,
+  //   },
+  // ]
 
 
 
@@ -66,11 +70,11 @@ const Distributer = () => {
             My Cart
           </div>
 
-          <div className='grouped'>Raj Traders</div>
+          <div className='grouped'> {data.distributerName} </div>
 
           <div className='unContainer'>
 
-            {Ungrouped.map((val, index) => {
+            {data.item.map((val, index) => {
               return (
                 <Ungroup
                   key={index}
